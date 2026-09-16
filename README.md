@@ -66,6 +66,12 @@ same way. [reports/cycle-08-readings.csv](reports/cycle-08-readings.csv) has one
 row per reading per rule set. This cycle also writes
 [reports/SUMMARY.md](reports/SUMMARY.md).
 
+**Cycle 9 ([reports/cycle-09.md](reports/cycle-09.md))** — do the tight readings
+survive without the rules written for them? Some rules are stated only in the
+passage that reads a word; switching those off tests whether the tightness was
+built in. [reports/cycle-09-own-passage.csv](reports/cycle-09-own-passage.csv)
+has one row per reading.
+
 **No cycle draws any conclusion about whether Linear A is a Semitic language.**
 
 ## Credit

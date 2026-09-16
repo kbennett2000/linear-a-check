@@ -5,7 +5,7 @@
 owner read, and re-count seven numbers the paper states. **No conclusions about
 the language are drawn in this cycle**, and none should be read into it.
 
-> **Correction — 17 September 2026 (cycle 2).** Section 1.3 previously said the
+> **Correction — 16 September 2026 (cycle 2).** Section 1.3 previously said the
 > paper "contains a 508-entry lexicon as Appendix B, inside the PDF (pp. 36–40)".
 > That was wrong on both counts. The paper mentions a 508-entry lexicon once, at
 > the end of §9 (p. 20), and never prints it. Appendix B is a different thing: an
@@ -14,6 +14,8 @@ the language are drawn in this cycle**, and none should be read into it.
 > has been changed. The error mattered because it wrongly implied the 508-entry
 > lexicon was already in hand, when in fact it remains unpublished as far as we
 > can see and is a live candidate for whatever the Zenodo record holds.
+> *(Date corrected from 17 to 16 September 2026 in cycle 9: the machine's date
+> for cycles 2 to 9 was 16 September. Nothing else in this note changed.)*
 
 > **Correction — 16 September 2026 (cycle 4).** Section 1.3 below says the 504
 > errors were "our network reaching Zenodo, not something about this particular

@@ -1,6 +1,7 @@
 # A fair test of "Ya Diktu": what we checked, and what we found
 
-**Written 16 September 2026. This is the place to start.**
+**Written 16 September 2026; revised after cycle 9, same day. This is the
+place to start.**
 
 ---
 
@@ -204,9 +205,12 @@ The 66-rule table was turned into code that takes a Linear A word and lists ever
 Hebrew root it could be read as. It reproduced **86 of 89** of the paper's own
 readings.
 
-Then the same code was pointed at the corpus. **A typical Linear A word matches
-about 190 Hebrew roots** — out of roughly 1,390 in the whole dictionary. The
-range ran from 32 to 322.
+Then the same code was pointed at the corpus, and the question became how much
+choice the rules leave. **Among the words the paper reads, a typical word matches
+about 190 Hebrew roots** — the median is 188, the range 32 to 322, out of roughly
+1,390 roots in the whole dictionary. **Across all 787 readable corpus words the
+median is about 120.** The paper's own words are longer than average, and longer
+words match more.
 
 ### Cycle 5 — testing one specific claim
 
@@ -300,17 +304,49 @@ matches 189 roots. Choosing one of 189 candidates and then noting that this
 particular one is rare is not surprising — that is what choosing from 189 looks
 like. The rarity is in the naming, not in the fit.
 
-**With only the stated rules, some readings are genuinely tight.** The median
-word matches 12 roots, not 189. And three readings — `U-NA-RU-KA-NA-SI`,
+**With only the stated rules, some readings look genuinely tight.** The median
+word matches 12 roots, not 189. Three readings — `U-NA-RU-KA-NA-SI`,
 `U-NA-KA-NA-SI` and `RA-KI-NI-SE` — match **exactly one** Hebrew root, and in
 each case it is the root the paper gives: *k-n-s*. Seven readings in all have
-both a chance of 0.5% or less and ten options or fewer. For those, there was
-almost nothing to choose from, and almost no invented word could have produced
-the same reading.
+both a chance of 0.5% or less and ten options or fewer.
 
-**This is the clearest single conclusion of the project. The paper's readings
-carry real weight where they rest on its stated rules, and very little where they
-need the rules it uses without stating.**
+### But some of that tightness is built in (cycle 9)
+
+A rule the paper states **only in the passage that reads a word** will naturally
+fit that word. The rule and the reading are then one claim, not two, and the
+tightness cannot count as support.
+
+Cycle 9 tested that. For each of the 31 readings, it found the rules the paper
+states nowhere except in that reading's own section (or Appendix B entry),
+switched off **only** those, kept every other stated rule on, and measured again.
+
+* **11 of the 31 readings use at least one such rule.**
+* **None of the 11 survives.** Every one of them depended on it; not one had a
+  second route to its root.
+* **The three `k-n-s` readings are among the eleven.** R42 (U-NA- = *hunna*),
+  N03 (RU = *lū*) and R44 (RA- = *la-*) are all introduced in §5.1, the section
+  that reads those words. So is R25, the value `*301` = /na/ that
+  `A-TA-I-*301-WA-JA` needs, stated only in §4.1 where that verb is read.
+* **20 readings survive**, and they are exactly the 20 that had nothing to switch
+  off. Four of them stay tight — ten options or fewer, chance 0.5% or less:
+  `A-TA-I-*301-WA-E` and `A-TA-I-NA-WA-JA` (the invocation verb, n-w-y),
+  `SI-KI-NE` (š-k-n) and `KI-DA-RO` (q-d-r).
+
+Two of those four are the same invocation verb restated in the paper's own
+translation and cross-site tables, which is a different passage by the test but
+thin as independent evidence. What is solid about them is narrower:
+`A-TA-I-NA-WA-JA` spells its fourth sign `NA` rather than `*301`, so it never
+needs the rule written for `*301`. That leaves `SI-KI-NE` and `KI-DA-RO` as the
+clean cases — ordinary words, read elsewhere in the paper, reachable on rules
+stated for other words.
+
+**So the honest version is narrower than cycle 8 first put it.** Where a reading
+rests on rules the paper states for *other* words, its tightness is real evidence
+— and about twenty readings are in that position, four of them tight. Where a
+reading needs a rule introduced to read it, the tightness is partly built in and
+cannot be counted twice. The readings that most caught the eye — the three
+matching only *k-n-s* — are in the second group. They may still be right; they
+just cannot be their own evidence.
 
 Two further notes. The seven words of the libation formula are **not** the
 paper's tightest readings: with all rules on, their median place is 27th of 46.
@@ -352,13 +388,17 @@ in the paper or in the code.
 
 | # | cycle | date | what was wrong | how it was fixed |
 |---|---|---|---|---|
-| 1 | 2 | 17 Sep 2026 | **Our brief's error.** Cycle 1 §1.3 said the paper "contains a 508-entry lexicon as Appendix B, inside the PDF". Wrong on both counts: the 508-entry lexicon is mentioned once and never printed, and Appendix B is a different thing — an index of 67 sign-groups from Davis 2026. It wrongly implied the word list was already in hand. | §1.3 rewritten, dated note added at the top of `reports/cycle-01.md` |
-| 2 | 2 | 17 Sep 2026 | **Our own test's error.** The first version of the PK Za 11 check asserted that `A` was the token immediately before `SA-SA-RA-ME`. It is not — a line-break token sits between them. | The test was corrected to check what was actually claimed. The checker itself was not changed |
+| 1 | 2 | 16 Sep 2026 | **Our brief's error.** Cycle 1 §1.3 said the paper "contains a 508-entry lexicon as Appendix B, inside the PDF". Wrong on both counts: the 508-entry lexicon is mentioned once and never printed, and Appendix B is a different thing — an index of 67 sign-groups from Davis 2026. It wrongly implied the word list was already in hand. | §1.3 rewritten, dated note added at the top of `reports/cycle-01.md` |
+| 2 | 2 | 16 Sep 2026 | **Our own test's error.** The first version of the PK Za 11 check asserted that `A` was the token immediately before `SA-SA-RA-ME`. It is not — a line-break token sits between them. | The test was corrected to check what was actually claimed. The checker itself was not changed |
 | 3 | 4 | 16 Sep 2026 | **Our brief's error.** Cycles 1 and 2 said the Zenodo 504 errors were "our network reaching Zenodo, not something about this particular record". That was a guess and it was wrong: the owner's own browser on a different network got the same 504, and Plazi's uptime monitor logged Zenodo 504s on 14 and 16 September 2026. | Dated notes added to the top of `reports/cycle-01.md` and `reports/cycle-02.md`. The conclusion — file list unknown — is unchanged; the reason is not |
-| 4 | 5 | 16 Sep 2026 | `reports/cycle-02.md` was headed "Date run: 17 September 2026". The machine's date for cycles 2, 3 and 4 was 16 September. | Header corrected, dated note added. One line inside `reports/cycle-01.md` — the cycle 2 correction note above — still carries the same wrong date, 17 September, and is left as written |
+| 4 | 5 | 16 Sep 2026 | `reports/cycle-02.md` was headed "Date run: 17 September 2026". The machine's date for cycles 2, 3 and 4 was 16 September. | Header corrected, dated note added. One line inside `reports/cycle-01.md` — the cycle 2 correction note — carried the same wrong date and was left as written at the time; it was corrected in cycle 9, row 9 below |
 | 5 | 7 | 16 Sep 2026 | **Our brief's error, twice over.** It said about 22 Ugaritic entries use irregular notation and that the regular ones give 531 roots. In fact **69** entries need hand treatment (54 of them structurally irregular), and the clean entries give 485 roots, or 500 once `*` and `(?)` are stripped. 531 could not be reproduced by any reading. | All 69 expanded by hand and listed in `reports/cycle-07.md`; the final count, **595**, is the one used |
 | 6 | 7 | 16 Sep 2026 | **Our brief's error.** It said a word's possible roots "don't depend on the list", so they could be worked out once and checked against every list. Three rules — R22, R24 and N04 — look ahead into the list before deciding whether they may fire. The shortcut would have inflated the Hebrew figures by 2.88% and changed the answer for 234 of 787 words. | Each list matched against its own list instead, which also keeps cycle 7's Hebrew column identical to cycle 6's. The deviation and its measured cost are recorded in `reports/cycle-07.md` §1 |
 | 7 | 8 | 16 Sep 2026 | **Our error.** The README and `reports/cycle-07.md` described the English word list as being under an "MIT licence". Its `LICENSE.md` says the data comes from the Google Web Trillion Word Corpus via the Linguistic Data Consortium; research use is permitted under the LDC licence, Norvig's MIT licence for his own contributions, and US fair use; commercial use is not recommended without an LDC licence. | Both credit lines corrected, dated note added to `reports/cycle-07.md` |
+
+| 8 | 9 | 16 Sep 2026 | **Our error, in this write-up.** §6 called the stated-only tightness "the clearest single conclusion of the project" and said it "runs in the paper's favour". That overstated it: 11 of the 31 readings — including all three `k-n-s` readings it singled out — depend on a rule the paper states only in the passage that reads the word, and none of them survives without it. | §6, §9 and "A last word" rewritten to what cycle 9 supports; a dated note added to `reports/cycle-08.md` §2 |
+| 9 | 9 | 16 Sep 2026 | **Our error.** Rows 1 and 2 of this table were dated 17 September 2026. Cycle 2 ran on 16 September — the same clock error cycle 5 fixed in `reports/cycle-02.md`'s header. | Both rows corrected, and the same wrong date inside the cycle 2 correction note at the top of `reports/cycle-01.md` |
+| 10 | 9 | 16 Sep 2026 | **Imprecision in this write-up.** §5 said "a typical Linear A word matches about 190 Hebrew roots". That is the median for the words the paper reads (188), not for the corpus: across all 787 readable corpus words the median is about 120. | Both figures now given |
 
 Code faults caught before publication are recorded in the cycle reports where
 they occurred — among them a character class that silently truncated roots ending
@@ -376,11 +416,15 @@ Offered as constructive suggestions, in the order we would try them.
    reconstruct are used but never stated, and cycle 4 had to add seven more from
    worked examples. A single numbered table — each rule saying exactly what it
    permits — would let any reader check a reading without reverse-engineering it.
-2. **Show the readings still work with only the stated rules.** This is the
-   strongest thing available, and cycle 8 suggests it is partly there already: 31
-   of 55 readings survive on the stated rules alone, and some of those are very
-   tight indeed. Presenting that subset first, and marking the rest as depending
-   on further rules, would separate the strong evidence from the weak.
+2. **Show the readings still work with only the stated rules — and with rules
+   stated somewhere other than where the word is read.** 31 of 55 readings
+   survive on the stated rules alone, which is a real strength worth presenting
+   first. But cycle 9 found that 11 of those 31 depend on a rule the paper states
+   only in the passage that reads the word, and none of the 11 survives without
+   it. The strongest version of this evidence is a rule stated in one place that
+   then **correctly predicts a reading somewhere else** — as `SI-KI-NE` and
+   `KI-DA-RO` do. Marking, for each reading, which rules it needs and where each
+   of those rules is first stated would let a reader see that at a glance.
 3. **Predict readings before checking them.** Choose a set of inscriptions, fix
    the rules, publish the predicted readings, and only then compare. This removes
    the single biggest objection to everything in §5 and §6 — that the root was
@@ -429,6 +473,7 @@ Offered as constructive suggestions, in the order we would try them.
 | 6 | [cycle-06.md](cycle-06.md) | The made-up-word test |
 | 7 | [cycle-07.md](cycle-07.md) | Does the choice of word list change the answer? |
 | 8 | [cycle-08.md](cycle-08.md) | How tight is each reading; this write-up |
+| 9 | [cycle-09.md](cycle-09.md) | Do the tight readings survive without the rules written for them? |
 
 Supporting tables: [cycle-02-readings.csv](cycle-02-readings.csv),
 [cycle-03-readings.csv](cycle-03-readings.csv),
@@ -439,7 +484,8 @@ Supporting tables: [cycle-02-readings.csv](cycle-02-readings.csv),
 [cycle-05-rankings.csv](cycle-05-rankings.csv),
 [cycle-06-sets.csv](cycle-06-sets.csv),
 [cycle-07-lists.csv](cycle-07-lists.csv),
-[cycle-08-readings.csv](cycle-08-readings.csv).
+[cycle-08-readings.csv](cycle-08-readings.csv),
+[cycle-09-own-passage.csv](cycle-09-own-passage.csv).
 
 ---
 
@@ -455,6 +501,14 @@ the field. It says yes to nearly every word, whatever word list you give it, and
 whatever the word actually is — including words we invented. Where the paper
 leans only on the rules it states outright, that changes, and some readings
 become genuinely tight. Where it needs the unstated rules, it does not.
+
+One further qualification, found last and worth keeping in view. Some of the
+tightest readings rest on rules the paper introduces in the same passage that
+reads the word. There the rule and the reading are a single claim, and the
+tightness cannot be counted as separate support. About twenty readings are not
+in that position, and four of those are tight — they are reached by rules the
+paper stated for other words, and they are the sturdiest thing this project
+found.
 
 The rest of the argument rests on meaning, and on the fit of the whole formula —
 and those we could not test. **Whether Linear A is a Semitic language is not

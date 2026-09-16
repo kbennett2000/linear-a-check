@@ -190,6 +190,18 @@ words outside the formula fit more tightly than they do.
 
 This is the strongest result in the cycle, and it runs in the paper's favour.
 
+> **Note added 16 September 2026 (cycle 9).** That sentence claims too much, and
+> the result below has to be read with a caveat. All three readings named here
+> depend on rules the paper states **only in §5.1, the section that reads them**:
+> R42 (U-NA- = *hunna*), N03 (RU = *lū*) and R44 (RA- = *la-*). A rule written to
+> read a word will fit that word, so the rule and the reading are one claim, not
+> two, and the tightness cannot count as independent support. Cycle 9 switched
+> each reading's own-passage rules off: **11 of the 31 readings use at least one,
+> and none of the 11 survives** — these three among them. Twenty readings use no
+> such rule, and four of those stay tight; they are the readings that do carry
+> independent weight. See [`reports/cycle-09.md`](cycle-09.md). Nothing else in
+> this report was changed.
+
 Under the **stated-only** rule set, three readings match **exactly one** Hebrew
 primitive root — and in each case it is the root the paper gives:
 

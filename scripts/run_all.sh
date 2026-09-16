@@ -56,4 +56,7 @@ node    scripts/18_dump_hebrew.js                 | tee data/derived/out_18.txt
 
 # --- cycle 8 ---
 ./venv/bin/python scripts/33_cycle8_tightness.py  | tee data/derived/out_33.txt
+
+# --- cycle 9 ---
+./venv/bin/python scripts/34_cycle9_own_passage.py | tee data/derived/out_34.txt
 echo "done"
