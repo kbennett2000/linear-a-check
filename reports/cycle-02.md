@@ -15,6 +15,19 @@ Peak Sanctuary Libation Formula"* (pre-print, September 2026), DOI
 references quoted here are drawn from that paper and reused under that licence.
 The corpus is the Linear A Explorer data (Hogan 2019–).
 
+> **Correction — 16 September 2026 (cycle 4).** Section 2 below repeats cycle 1's
+> claim that "zenodo.org is unreachable from this machine". **That was a guess,
+> and it was wrong.** The 504s come from Zenodo's side. The project owner's own
+> web browser, on a different network, got the same 504 on 16 September 2026, and
+> Plazi's automatic uptime monitor logged Zenodo pages returning HTTP 504 after
+> about 30 seconds on 14 September 2026
+> ([plazi/monitoring#4101](https://github.com/plazi/monitoring/issues/4101)) and
+> again on 16 September 2026
+> ([plazi/monitoring#4114](https://github.com/plazi/monitoring/issues/4114)).
+> The result is unchanged — the file list is still **unknown** — but the reason
+> is a Zenodo outage, not this machine's network. Nothing else in this report has
+> been changed.
+
 Terms used below, defined on first use. A **sign-group** is what Linear A scholars
 call a written word: a run of signs between two dividers. A **word divider** is the
 little upright stroke (𐄁) Minoan scribes put between words. A **hapax legomenon**

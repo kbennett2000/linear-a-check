@@ -15,6 +15,21 @@ the language are drawn in this cycle**, and none should be read into it.
 > lexicon was already in hand, when in fact it remains unpublished as far as we
 > can see and is a live candidate for whatever the Zenodo record holds.
 
+> **Correction — 16 September 2026 (cycle 4).** Section 1.3 below says the 504
+> errors were "our network reaching Zenodo, not something about this particular
+> record". **That was a guess, and it was wrong.** The failure is on Zenodo's
+> side. Two independent checks show it: the project owner's own web browser, on
+> a different network, got the same 504 from Zenodo on 16 September 2026; and
+> Plazi's automatic uptime monitor logged `https://zenodo.org/communities/biosyslit/`
+> returning HTTP 504 after about 30 seconds on 14 September 2026
+> ([plazi/monitoring#4101](https://github.com/plazi/monitoring/issues/4101),
+> response time 30,316 ms) and again on 16 September 2026
+> ([plazi/monitoring#4114](https://github.com/plazi/monitoring/issues/4114),
+> response time 30,303 ms). Both were opened and read before this note was
+> written. The practical conclusion is unchanged — the record's file list is
+> still **unknown** — but the reason is Zenodo being down, not this machine.
+> Nothing else in this report has been changed.
+
 A note on words used below. *Linear A* is the undeciphered writing system of
 Bronze Age Crete. A **syllabogram** is a sign standing for a whole syllable (KA,
 TI). A **logogram** is a sign standing for a whole word or commodity (VIN "wine",

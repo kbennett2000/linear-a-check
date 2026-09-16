@@ -23,6 +23,15 @@ Hebrew word list to compare against later. The two tables are
 plus `root`, `root_kind` and `languages`) and
 [reports/cycle-03-rules.csv](reports/cycle-03-rules.csv) (66 rules).
 
+**Cycle 4 ([reports/cycle-04.md](reports/cycle-04.md))** — build the matcher: code
+that takes a Linear A word and lists every Hebrew root it could match under the
+paper's own rules, then check it finds the paper's own readings.
+[reports/cycle-04-selftest.csv](reports/cycle-04-selftest.csv) has one row per
+reading tested, [reports/cycle-04-rules-added.csv](reports/cycle-04-rules-added.csv)
+the seven rules that had to be added, and
+[reports/cycle-04-formula-matches.csv](reports/cycle-04-formula-matches.csv) every
+root the seven formula words can match.
+
 No cycle so far draws any conclusion about the language.
 
 ## Credit

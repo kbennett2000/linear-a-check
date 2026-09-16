@@ -31,4 +31,10 @@ node    scripts/01_dump_corpus.js        | tee data/derived/out_01.txt
 node    scripts/18_dump_hebrew.js                 | tee data/derived/out_18.txt
 ./venv/bin/python scripts/19_build_hebrew_list.py | tee data/derived/out_19.txt
 ./venv/bin/python scripts/20_root_coverage.py     | tee data/derived/out_20.txt
+
+# --- cycle 4 ---
+./venv/bin/python scripts/21_matcher.py           | tee data/derived/out_21.txt
+./venv/bin/python scripts/22_selftest.py          | tee data/derived/out_22.txt
+./venv/bin/python scripts/23_rules_added.py       | tee data/derived/out_23.txt
+./venv/bin/python scripts/24_freedom.py           | tee data/derived/out_24.txt
 echo "done"

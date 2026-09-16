@@ -1,0 +1,112 @@
+word,where,paper_root,hebrew_spelling,in_hebrew_list,result,strongs,pieces_removed,rules_used,sound_matches,total_roots_matched,reason
+DU-RA-RE,"Appendix A, p.36",d-r-r,d-r-r,no,root not in the Hebrew list,,,,,137,"the paper's root is not a Strong's primitive root, so the matcher cannot find it"
+JA-SA-RA,"Appendix A, p.36",y-š-r,y-š-r,yes,found,H3474,(nothing),R01 R06 R09,,180,
+A-NA-NE,"Appendix A, p.36",ḥ-n-n,ḥ-n-n,yes,found,H2603,(nothing),R01 R07,,50,
+A-TA-I-*301-WA-JA,"§4.1, pp.4-6",n-w-y,n-w-h or n-w-y,yes,found,H5115,A- (R37) + TA- (R39),R01 R02 R25 R37 R39,,184,
+JA-DI-KI-TU,"§4.2, pp.6-7",d-q-q,d-q-q,yes,found,H1854,-TU (N01) + JA- (R38),N01 R01 R05 R08 R12 R13 R38,,242,
+JA-SA-SA-RA-ME,"§4.3, pp.7-8",y-š-r,y-š-r,yes,found,H3474,-ME (R47),R01 R06 R09 R17 R18 R47,,234,
+JA-SA-RA,"§4.3, p.8",y-š-r,y-š-r,yes,found,H3474,(nothing),R01 R06 R09,,180,
+SA-SA-RA-ME,"§4.3, p.8",y-š-r,y-š-r,yes,found,H3474,-ME (R47),R01 R06 R09 R17 R18 R47 R62,,211,
+A-SA-SA-RA,"§4.3, p.8",y-š-r,y-š-r,yes,found,H3474,(nothing),R01 R02 R06 R09 R17 R18 R62,,189,
+I-MI-SA-RA,"§4.3, p.8",e-š-r,e-š-r,no,root not in the Hebrew list,,,,,149,"the paper's root is not a Strong's primitive root, so the matcher cannot find it"
+U-NA-KA-NA-SI,"§5.1, p.9",k-n-s,k-n-s,yes,found,H3664,U-NA- (R42),R01 R05 R06 R13 R42,,198,
+U-NA-RU-KA-NA-SI,"§5.1, p.9",k-n-s,k-n-s,yes,found,H3664,U-NA- (R42) + RU- (N03),N03 R01 R05 R06 R13 R42,,231,
+RA-KI-NI-SE,"§5.1, p.9",k-n-s,k-n-s,yes,found,H3664,RA- (R44),R01 R05 R06 R13 R44,,242,
+I-PI-NA-MA,"§5.2, p.10",p-n-y,p-n-h or p-n-y,yes,found,H6437,-MA (R47),R01 R02 R05 R07 R15 R47,,147,
+SI-RU-TE,"§5.3, pp.10-11",š-r-t,š-r-t,yes,found,H8334,(nothing),R01 R05 R06 R09 R11,,230,
+TA-NA-RA-TE-U-TI-NU,"§6.1, pp.12-13",r-ṣ-y,r-ṣ-h or r-ṣ-y,yes,found,H7521,-NU (R50) + -TI (R49) + TA-NA- (R40),R01 R05 R07 R09 R11 R40 R49 R50,,271,
+*301-SI,"§4.1 n.10, p.5",n-ś-ʾ,n-ś-ʾ,yes,found,H5375,(nothing),R01 R06 R07 R25,,105,
+TE-*301,"§4.1 n.10, p.5",t-ʾ-n,t-ʾ-n,no,root not in the Hebrew list,,,,,137,"the paper's root is not a Strong's primitive root, so the matcher cannot find it"
+NA-TU-*301-NE,"§4.1 n.10, p.5",n-t-n,n-t-n,yes,found,H5414,first part of a compound (N07),N07 R01 R05 R11 R25,,52,
+A-TA-I-NA-WA-JA,"§7 table, p.14",n-w-y,n-w-h or n-w-y,yes,found,H5115,A- (R37) + TA- (R39),R01 R02 R37 R39,,184,
+JA-DI-KI-TU,"§7 table, p.14",d-q-q,d-q-q,yes,found,H1854,-TU (N01) + JA- (R38),N01 R01 R05 R08 R12 R13 R38,,242,
+JA-SA-SA-RA-ME,"§7 table, p.14",y-š-r,y-š-r,yes,found,H3474,-ME (R47),R01 R06 R09 R17 R18 R47,,234,
+U-NA-KA-NA-SI,"§7 table, p.14",k-n-s,k-n-s,yes,found,H3664,U-NA- (R42),R01 R05 R06 R13 R42,,198,
+I-PI-NA-MA,"§7 table, p.14",p-n-y,p-n-h or p-n-y,yes,found,H6437,-MA (R47),R01 R02 R05 R07 R15 R47,,147,
+SI-RU-TE,"§7 table, p.14",š-r-t,š-r-t,yes,found,H8334,(nothing),R01 R05 R06 R09 R11,,230,
+TA-NA-RA-TE-U-TI-NU,"§7 table, p.14",r-ṣ-y,r-ṣ-h or r-ṣ-y,yes,found,H7521,-NU (R50) + -TI (R49) + TA-NA- (R40),R01 R05 R07 R09 R11 R40 R49 R50,,271,
+SI-KI-NE,"§7, p.14",š-k-n,š-k-n,yes,found,H7931,(nothing),R01 R05 R06 R13,,141,
+DU-RA-RE,"§7, p.15",d-r-r,d-r-r,no,root not in the Hebrew list,,,,,137,"the paper's root is not a Strong's primitive root, so the matcher cannot find it"
+JA-SA-RA,"§7, p.15",y-š-r,y-š-r,yes,found,H3474,(nothing),R01 R06 R09,,180,
+A-TA-I-*301-WA-JA,"§8 table, p.16",n-w-y,n-w-h or n-w-y,yes,found,H5115,A- (R37) + TA- (R39),R01 R02 R25 R37 R39,,184,
+JA-DI-KI-TU,"§8 table, p.16",d-q-q,d-q-q,yes,found,H1854,-TU (N01) + JA- (R38),N01 R01 R05 R08 R12 R13 R38,,242,
+JA-SA-SA-RA-ME,"§8 table, p.16",y-š-r,y-š-r,yes,found,H3474,-ME (R47),R01 R06 R09 R17 R18 R47,,234,
+U-NA-KA-NA-SI,"§8 table, p.16",k-n-s,k-n-s,yes,found,H3664,U-NA- (R42),R01 R05 R06 R13 R42,,198,
+I-PI-NA-MA,"§8 table, p.16",p-n-y,p-n-h or p-n-y,yes,found,H6437,-MA (R47),R01 R02 R05 R07 R15 R47,,147,
+SI-RU-TE,"§8 table, p.16",š-r-t,š-r-t,yes,found,H8334,(nothing),R01 R05 R06 R09 R11,,230,
+TA-NA-RA-TE-U-TI-NU,"§8 table, p.16",r-ṣ-y,r-ṣ-h or r-ṣ-y,yes,found,H7521,-NU (R50) + -TI (R49) + TA-NA- (R40),R01 R05 R07 R09 R11 R40 R49 R50,,271,
+TA-NA-I-*301-U-TI-NU,"§8 table, p.16",ʿ-n-y,ʿ-n-h or ʿ-n-y,yes,found,H6030,-NU (R50) + -TI (R49) + TA-NA- (R40),R01 R07 R25 R40 R49 R50,,194,
+I-NA-TA,"§8 table, p.16",ʿ-n-y,ʿ-n-h or ʿ-n-y,yes,found,H6030,-TA (N02),N02 R01 R07,,172,
+TU-RU-SA,"§8 table, p.16",t-r-s,t-r-s,no,root not in the Hebrew list,,,,,183,"the paper's root is not a Strong's primitive root, so the matcher cannot find it"
+DU-*314-RE,"§8 table, p.16",ḥ-r-r,ḥ-r-r,yes,found,H2787,DU- (R46),R01 R08 R09 R29 R46,,113,
+A-TA-I-*301-WA-E,"§8 table, p.16",n-w-y,n-w-h or n-w-y,yes,found,H5115,A- (R37) + TA- (R39),R01 R02 R07 R25 R37 R39,,162,
+A-DI-KI-TE-TE,"§8 table, p.16",d-q-q,d-q-q,yes,found,H1854,-TE (R52) + -TE (R52),R01 R02 R05 R08 R12 R13 R52,,294,
+SA-SA-RA-ME,"§8 table, p.16",y-š-r,y-š-r,yes,found,H3474,-ME (R47),R01 R06 R09 R17 R18 R47 R62,,211,
+U-NA-RU-KA-NA-TI,"§8 table, p.16",k-n-s,k-n-s,yes,found,H3664,-TI (R49) + U-NA- (R42) + RU- (N03),N03 R01 R05 R13 R22 R42 R49,,296,
+I-PI-NA-MI-NA,"§8 table, p.16",p-n-y,p-n-h or p-n-y,yes,found,H6437,first part of a compound (N07),N07 R01 R02 R05 R07 R15,,99,
+TA-NA-I-NA-U-TI-NU,"§8, p.16",ʿ-n-y,ʿ-n-h or ʿ-n-y,yes,found,H6030,-NU (R50) + -TI (R49) + TA-NA- (R40),R01 R07 R40 R49 R50,,194,
+I-NA-TA,"§8, p.16",ʿ-n-y,ʿ-n-h or ʿ-n-y,yes,found,H6030,-TA (N02),N02 R01 R07,,172,
+TU-RU-SA,"§8, p.17",t-r-s,t-r-s,no,root not in the Hebrew list,,,,,183,"the paper's root is not a Strong's primitive root, so the matcher cannot find it"
+DU-*314-RE,"§8, p.17",ḥ-r-r,ḥ-r-r,yes,found,H2787,DU- (R46),R01 R08 R09 R29 R46,,113,
+A-TA-I-*301-DE-KA,"§8, p.18",ʿ-n-y,ʿ-n-h or ʿ-n-y,yes,found,H6030,-DE-KA (R55) + A- (R37) + TA- (R39),R01 R07 R25 R37 R39 R55,,251,
+SA-SA-RA-ME,"§8, p.18",y-š-r,y-š-r,yes,found,H3474,-ME (R47),R01 R06 R09 R17 R18 R47 R62,,211,
+A-TA-NA,"§8, p.18",y-t-n,y-t-n,no,root not in the Hebrew list,,,,,167,"the paper's root is not a Strong's primitive root, so the matcher cannot find it"
+DU-PU₂-RE,"§9, p.19",d-b-r,d-b-r,yes,found,H1696,(nothing),R01 R05 R09 R12 R15,,234,
+A-DI-KI-TE-TE,"§9, p.19",d-q-q,d-q-q,yes,found,H1854,-TE (R52) + -TE (R52),R01 R02 R05 R08 R12 R13 R52,,294,
+*307,"§9, p.19",d-b-r,d-b-r,yes,skipped,,,,,0,"contains *307 (no sound value in the rules table: other starred sign numbers, word signs, numbers and fractions)"
+A-DI-KI-TE-TE,"Appendix B, pp.36-40",d-q-q,d-q-q,yes,found,H1854,-TE (R52) + -TE (R52),R01 R02 R05 R08 R12 R13 R52,,294,
+A-JA,"Appendix B, pp.36-40",ḥ-y-y,ḥ-y-h or ḥ-y-y,yes,found,H2421,(nothing),R01 R07,,46,
+A-MI-DA-O,"Appendix B, pp.36-40",ʿ-m-m,ʿ-m-m,yes,found,H6004,first part of a compound (N07),N07 R01 R07 R08,,111,
+A-MI-DA-O,"Appendix B, pp.36-40",y-d-ʿ,y-d-ʿ,yes,found,H3045,second part of a compound (N07),N07 R01 R05 R07 R12 R62,,111,
+A-MI-DA-U,"Appendix B, pp.36-40",ʿ-m-m,ʿ-m-m,yes,found,H6004,first part of a compound (N07),N07 R01 R07 R08,,111,
+A-MI-DA-U,"Appendix B, pp.36-40",y-d-ʿ,y-d-ʿ,yes,found,H3045,second part of a compound (N07),N07 R01 R05 R07 R12 R62,,111,
+A-NA-NU-SI-JA-SE,"Appendix B, pp.36-40",ʿ-n-n,ʿ-n-n,yes,found,H6049,-SI-JA-SE (R56),R01 R07 R56,,152,
+A-PA-RA-NE,"Appendix B, pp.36-40",ʿ-b-r,ʿ-b-r,yes,found,H5674,first part of a compound (N07),N07 R01 R05 R07 R09 R15,,121,
+A-RA-TU,"Appendix B, pp.36-40",ʾ-r-ṣ,ʾ-r-ṣ,no,root not in the Hebrew list,,,,,187,"the paper's root is not a Strong's primitive root, so the matcher cannot find it"
+A-RA-TU-ME,"Appendix B, pp.36-40",ʾ-r-ṣ,ʾ-r-ṣ,no,root not in the Hebrew list,,,,,233,"the paper's root is not a Strong's primitive root, so the matcher cannot find it"
+A-RI-NI-TA,"Appendix B, pp.36-40",ʾ-r-y,ʾ-r-h or ʾ-r-y,yes,found,H717,-NI-TA (R59),R01 R07 R09 R59,,218,
+A-SA-SA-RA-ME,"Appendix B, pp.36-40",y-š-r,y-š-r,yes,found,H3474,-ME (R47),R01 R02 R06 R09 R17 R18 R47 R62,,217,
+A-SI-KI-RA,"Appendix B, pp.36-40",š-k-r,š-k-r,yes,found,H7937,(nothing),R01 R02 R05 R06 R09 R13,,223,
+A-TA-I-*301-DE-KA,"Appendix B, pp.36-40",ʿ-n-y,ʿ-n-h or ʿ-n-y,yes,found,H6030,-DE-KA (R55) + A- (R37) + TA- (R39),R01 R07 R25 R37 R39 R55,,251,
+A-TA-I-*301-WA-E,"Appendix B, pp.36-40",n-w-y,n-w-h or n-w-y,yes,found,H5115,A- (R37) + TA- (R39),R01 R02 R07 R25 R37 R39,,162,
+A-TA-I-*301-WA-JA,"Appendix B, pp.36-40",n-w-y,n-w-h or n-w-y,yes,found,H5115,A- (R37) + TA- (R39),R01 R02 R25 R37 R39,,184,
+A-TA-I-*301-WA-JA,"Appendix B, pp.36-40",n-b-ʾ,n-b-ʾ,yes,not found,,,,,184,"not reproducible, and correctly so: cycle 3 recorded that the paper prints √n-b-ʾ in this entry as the root of its Hebrew comparison word hitnabbēʾ, not of the Linear A word, whose root is √n-w-y"
+A-TA-NA-TE,"Appendix B, pp.36-40",y-t-n,y-t-n,no,root not in the Hebrew list,,,,,193,"the paper's root is not a Strong's primitive root, so the matcher cannot find it"
+DA-MA-TE,"Appendix B, pp.36-40",d-m-t,d-m-t,no,root not in the Hebrew list,,,,,164,"the paper's root is not a Strong's primitive root, so the matcher cannot find it"
+I-DA-MA-TE,"Appendix B, pp.36-40",d-m-t,d-m-t,no,root not in the Hebrew list,,,,,194,"the paper's root is not a Strong's primitive root, so the matcher cannot find it"
+I-NA-JA-PA-QA,"Appendix B, pp.36-40",ʾ-n-n,ʾ-n-n,yes,not found,,,,,32,"not reproducible: the paper's entry reads the word as ʾinna (√ʾ-n-n) plus pāqaḥ (√p-q-ḥ) but never says what the JA in the middle writes, so the ʾ-n-n half cannot be closed off.  The √p-q-ḥ half is found"
+I-NA-JA-PA-QA,"Appendix B, pp.36-40",p-q-ḥ,p-q-ḥ,yes,found,H6491,second part of a compound (N07),N07 R01 R05 R07 R14 R15 R21,,32,
+I-NA-JA-RE-TA,"Appendix B, pp.36-40",y-r-ʾ,y-r-ʾ,yes,found,H3372,-TA (N02) + second part of a compound (N07),N02 N07 R01 R07 R09,,223,
+I-PI-NA-MA,"Appendix B, pp.36-40",p-n-y,p-n-h or p-n-y,yes,found,H6437,-MA (R47),R01 R02 R05 R07 R15 R47,,147,
+I-PI-NA-MI-NA,"Appendix B, pp.36-40",p-n-y,p-n-h or p-n-y,yes,found,H6437,first part of a compound (N07),N07 R01 R02 R05 R07 R15,,99,
+I-TI-TI-KU-NI,"Appendix B, pp.36-40",n-t-k,n-t-k,yes,found,H5413,-NI (R51),N05 R01 R02 R05 R11 R13 R17 R51,,322,
+I-ZU-RI-NI-TA,"Appendix B, pp.36-40",ṯ-w-r,š-w-r,yes,found,H7788,-NI-TA (R59),N04 R01 R02 R09 R27 R59,ṯ=š,158,
+JA-DI-KI-TE-TE,"Appendix B, pp.36-40",d-q-q,d-q-q,yes,found,H1854,-TE (R52) + -TE (R52) + JA- (R38),R01 R05 R08 R12 R13 R38 R52,,299,
+JA-DI-KI-TU,"Appendix B, pp.36-40",d-q-q,d-q-q,yes,found,H1854,-TU (N01) + JA- (R38),N01 R01 R05 R08 R12 R13 R38,,242,
+JA-SA-SA-RA-MA-NA,"Appendix B, pp.36-40",y-š-r,y-š-r,yes,found,H3474,-NA (R53) + -MA (R47),R01 R06 R09 R17 R18 R47 R53,,261,
+JA-SA-SA-RA-MA-NA,"Appendix B, pp.36-40",m-n-y,m-n-h or m-n-y,yes,found,H4487,second part of a compound (N07),N07 R01 R07,,261,
+JA-SA-SA-RA-ME,"Appendix B, pp.36-40",y-š-r,y-š-r,yes,found,H3474,-ME (R47),R01 R06 R09 R17 R18 R47,,234,
+JA-SU-MA-TU,"Appendix B, pp.36-40",š-m-ṭ,š-m-ṭ,yes,found,H8058,JA- (R38),R01 R05 R06 R11 R38,,206,
+JA-TA-I-*301-U-JA,"Appendix B, pp.36-40",n-w-y,n-w-h or n-w-y,yes,found,H5115,JA- (R38) + TA- (R39),N06 R01 R02 R25 R38 R39,,196,
+KI-DA-RO,"Appendix B, pp.36-40",q-d-r,q-d-r,yes,found,H6937,(nothing),R01 R05 R09 R12 R13,,187,
+KI-TA-NA-SI-JA-SE,"Appendix B, pp.36-40",k-t-n,k-t-n,no,root not in the Hebrew list,,,,,294,"the paper's root is not a Strong's primitive root, so the matcher cannot find it"
+KU-MI-NA-QE,"Appendix B, pp.36-40",k-m-n,k-m-n,no,root not in the Hebrew list,,,,,35,"the paper's root is not a Strong's primitive root, so the matcher cannot find it"
+KU-MI-NA-QE,"Appendix B, pp.36-40",q-b-b,q-b-b,yes,not found,,,,,35,"not reproducible from the word as printed: the paper assigns √q-b-b to QE alone, which it says sits on side b of the roundel before the CAP logogram, so it is not part of this sign-group"
+KU-PA₃-NU,"Appendix B, pp.36-40",g-p-n,g-p-n,no,root not in the Hebrew list,,,,,179,"the paper's root is not a Strong's primitive root, so the matcher cannot find it"
+MA-KA-I-SE,"Appendix B, pp.36-40",m-k-s,m-k-s,no,root not in the Hebrew list,,,,,204,"the paper's root is not a Strong's primitive root, so the matcher cannot find it"
+NA-MA-MA-TI-TI-*319,"Appendix B, pp.36-40",n-ʿ-m,n-ʿ-m,yes,skipped,,,,,0,"contains *319 (no sound value in the rules table: other starred sign numbers, word signs, numbers and fractions)"
+PA-RA-NE,"Appendix B, pp.36-40",ʿ-b-r,ʿ-b-r,yes,found,H5674,first part of a compound (N07),N07 R01 R05 R07 R09 R15,,121,
+RU-MA-TA,"Appendix B, pp.36-40",r-w-m,r-w-m,yes,found,H7311,-TA (N02),N02 N04 R01 R09,,216,
+RU-MA-TA-SE,"Appendix B, pp.36-40",r-w-m,r-w-m,yes,found,H7311,-SE (R56) + -TA (N02),N02 N04 R01 R09 R56,,244,
+SI-KI-RA,"Appendix B, pp.36-40",š-k-r,š-k-r,yes,found,H7937,(nothing),R01 R05 R06 R09 R13,,217,
+TA-NA-I-*301-TI,"Appendix B, pp.36-40",ʿ-n-y,ʿ-n-h or ʿ-n-y,yes,found,H6030,-TI (R49) + TA-NA- (R40),R01 R07 R25 R40 R49,,188,
+TA-NA-I-*301-U-TI-NU,"Appendix B, pp.36-40",ʿ-n-y,ʿ-n-h or ʿ-n-y,yes,found,H6030,-NU (R50) + -TI (R49) + TA-NA- (R40),R01 R07 R25 R40 R49 R50,,194,
+TA-NA-TE,"Appendix B, pp.36-40",y-t-n,y-t-n,no,root not in the Hebrew list,,,,,163,"the paper's root is not a Strong's primitive root, so the matcher cannot find it"
+TA-NA-TE,"Appendix B, pp.36-40",ṯ-n-n,š-n-n,yes,found,H8150,-TE (R52),R01 R05 R08 R11 R52,ṯ=š,163,
+TI-TI-KU,"Appendix B, pp.36-40",n-t-k,n-t-k,yes,found,H5413,(nothing),N05 R01 R05 R11 R13 R17,,257,
+U-NA-KA-NA-SI,"Appendix B, pp.36-40",k-n-s,k-n-s,yes,found,H3664,U-NA- (R42),R01 R05 R06 R13 R42,,198,
+U-NA-RU-KA-NA-TI,"Appendix B, pp.36-40",k-n-s,k-n-s,yes,found,H3664,-TI (R49) + U-NA- (R42) + RU- (N03),N03 R01 R05 R13 R22 R42 R49,,296,
+U-TA-I-SE,"Appendix B, pp.36-40",w-t-ʾ,w-t-ʾ,no,root not in the Hebrew list,,,,,148,"the paper's root is not a Strong's primitive root, so the matcher cannot find it"
+WI-JA-SU-MA-TI-TI-*319,"Appendix B, pp.36-40",š-m-ṭ,š-m-ṭ,yes,skipped,,,,,0,"contains *319 (no sound value in the rules table: other starred sign numbers, word signs, numbers and fractions)"
+ZU-RI-NI-MA,"Appendix B, pp.36-40",ṯ-w-r,š-w-r,yes,found,H7788,-MA (R47) + -NI (R51),N04 R01 R09 R27 R47 R51,ṯ=š,129,
+*312-TA,"Appendix B, pp.36-40",k-t-n,k-t-n,no,skipped,,,,,0,"contains *312 (no sound value in the rules table: other starred sign numbers, word signs, numbers and fractions)"
