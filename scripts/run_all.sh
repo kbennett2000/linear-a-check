@@ -53,4 +53,7 @@ node    scripts/18_dump_hebrew.js                 | tee data/derived/out_18.txt
 ./venv/bin/python scripts/30_cycle7_lists.py      | tee data/derived/out_30.txt
 ./venv/bin/python scripts/31_cycle7_compare.py    | tee data/derived/out_31.txt
 ./venv/bin/python scripts/32_cycle7_throat.py     | tee data/derived/out_32.txt
+
+# --- cycle 8 ---
+./venv/bin/python scripts/33_cycle8_tightness.py  | tee data/derived/out_33.txt
 echo "done"

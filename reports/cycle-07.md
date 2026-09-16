@@ -1,5 +1,17 @@
 # Cycle 7 — does the word list matter?
 
+> **Correction — 16 September 2026 (cycle 8).** The credit line below first
+> described the English word list
+> ([first20hours/google-10000-english](https://github.com/first20hours/google-10000-english))
+> as being under an "MIT licence". That was wrong. Its `LICENSE.md` says the
+> data comes from the Google Web Trillion Word Corpus, distributed by the
+> Linguistic Data Consortium; that educational and personal/research use is
+> permitted under the LDC licence, Norvig's MIT licence for his own
+> contributions, and US fair use; and that commercial use is not recommended
+> without licensing from the LDC. The credit line in §9 and the one in
+> `README.md` have both been corrected to match. Nothing else in this report
+> was changed.
+
 **Date run:** 16 September 2026
 **Scope:** one objection. Cycle 6 found that made-up Linear A-like words match
 Hebrew roots about as easily as real Linear A words do, and that the paper's own
@@ -580,5 +592,11 @@ non-commercial research; not redistributed.
 English pronunciations come from the **CMU Pronouncing Dictionary**
 ([cmusphinx/cmudict](https://github.com/cmusphinx/cmudict)), Carnegie Mellon
 University, BSD-style licence. The English word list is
-[first20hours/google-10000-english](https://github.com/first20hours/google-10000-english),
-derived from the Google Web Trillion Word Corpus, MIT licence.
+[first20hours/google-10000-english](https://github.com/first20hours/google-10000-english).
+Its data is derived from the **Google Web Trillion Word Corpus** (Thorsten
+Brants and Alex Franz), distributed by the **Linguistic Data Consortium**, with
+subsets released by Peter Norvig and corpus editing by Josh Kaufman. Its
+`LICENSE.md` permits educational and personal/research use under the LDC
+licence, Norvig's MIT licence for his own contributions, and US fair use
+doctrine; it does **not** recommend commercial use without licensing the data
+from the LDC. It is used here for research only.

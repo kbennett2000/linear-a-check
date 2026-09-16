@@ -9,6 +9,13 @@ Linguists have not confirmed that claim. This project neither assumes it is righ
 nor assumes it is wrong. It works in small cycles, each with a written report, and
 reports matches as plainly as mismatches.
 
+## Start here
+
+**→ [reports/SUMMARY.md](reports/SUMMARY.md)** — the whole project in plain
+English: what was tested, what held up, what did not, every correction made along
+the way, and what would make the evidence stronger. Read that first; the eight
+cycle reports below are the working detail behind it.
+
 **Cycle 1 ([reports/cycle-01.md](reports/cycle-01.md))** — gather the sources and
 re-count the numbers the paper states about the corpus.
 
@@ -52,7 +59,14 @@ letter mix, and a list built from common English words.
 [reports/cycle-07-lists.csv](reports/cycle-07-lists.csv) has the counts for
 every list, word set, rule set and word length.
 
-No cycle so far draws any conclusion about the language.
+**Cycle 8 ([reports/cycle-08.md](reports/cycle-08.md))** — how tight is each of
+the paper's readings? For every reading, how many roots the word could have
+matched, and how many invented words of the same length could have been read the
+same way. [reports/cycle-08-readings.csv](reports/cycle-08-readings.csv) has one
+row per reading per rule set. This cycle also writes
+[reports/SUMMARY.md](reports/SUMMARY.md).
+
+**No cycle draws any conclusion about whether Linear A is a Semitic language.**
 
 ## Credit
 
@@ -81,8 +95,14 @@ redistributed in this repository.
 English pronunciations in cycle 7 come from the **CMU Pronouncing Dictionary**
 ([cmusphinx/cmudict](https://github.com/cmusphinx/cmudict)), Carnegie Mellon
 University, BSD-style licence. The English word list is
-[first20hours/google-10000-english](https://github.com/first20hours/google-10000-english),
-derived from the Google Web Trillion Word Corpus, MIT licence.
+[first20hours/google-10000-english](https://github.com/first20hours/google-10000-english).
+Its data is derived from the **Google Web Trillion Word Corpus** (Brants and
+Franz), distributed by the **Linguistic Data Consortium**, with subsets released
+by Peter Norvig and editing by Josh Kaufman. Its `LICENSE.md` permits
+educational and personal/research use under the LDC licence, Norvig's MIT
+licence for his own contributions, and US fair use; it does **not** recommend
+commercial use without a licence from the LDC. It is used here for research
+only.
 
 ## Layout
 
