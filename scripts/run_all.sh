@@ -42,4 +42,8 @@ node    scripts/18_dump_hebrew.js                 | tee data/derived/out_18.txt
 ./venv/bin/python scripts/25_cycle5_setup.py      | tee data/derived/out_25.txt
 ./venv/bin/python scripts/26_cycle5_rankings.py   | tee data/derived/out_26.txt
 ./venv/bin/python scripts/27_cycle5_decisions.py  | tee data/derived/out_27.txt
+
+# --- cycle 6 ---
+./venv/bin/python scripts/28_cycle6_sets.py       | tee data/derived/out_28.txt
+./venv/bin/python scripts/29_cycle6_match.py      | tee data/derived/out_29.txt
 echo "done"

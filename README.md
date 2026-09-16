@@ -39,6 +39,12 @@ are already known, as a control.
 [reports/cycle-05-rankings.csv](reports/cycle-05-rankings.csv) has every candidate
 ranked, for every sign tested, under both rule sets.
 
+**Cycle 6 ([reports/cycle-06.md](reports/cycle-06.md))** — the made-up-word
+test: do real Linear A words match Hebrew roots, and the paper's own roots, any
+more easily than scrambled or invented words do?
+[reports/cycle-06-sets.csv](reports/cycle-06-sets.csv) has the counts for every
+word set, rule set and word length.
+
 No cycle so far draws any conclusion about the language.
 
 ## Credit
