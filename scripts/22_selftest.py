@@ -195,6 +195,7 @@ def main():
     print('\nEXTRA CHECK — what happens if R32 (*319 = /hū/) is switched on')
     M.VALUES['*319'] = ('h',)
     M.VALUE_RULES['*319'] = frozenset(['R32'])
+    M._DEFAULT_ALPHA = None          # rebuild the sign table with *319 in it
     recs319 = run([t for t in tests if '*319' in t[0]], trie)
     for r in recs319:
         print('  %-24s %-8s %-8s %s | %s'
@@ -203,6 +204,7 @@ def main():
     print('  Both rows go from "skipped" to "found".  So leaving *319 out, as '
           'the cycle 4 brief directs, costs two rows.')
     del M.VALUES['*319'], M.VALUE_RULES['*319']
+    M._DEFAULT_ALPHA = None
 
     # Leave-one-out: which of the seven rules cycle 4 added is actually doing
     # work?  A rule that loses no rows when it is switched off is not holding

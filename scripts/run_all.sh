@@ -37,4 +37,9 @@ node    scripts/18_dump_hebrew.js                 | tee data/derived/out_18.txt
 ./venv/bin/python scripts/22_selftest.py          | tee data/derived/out_22.txt
 ./venv/bin/python scripts/23_rules_added.py       | tee data/derived/out_23.txt
 ./venv/bin/python scripts/24_freedom.py           | tee data/derived/out_24.txt
+
+# --- cycle 5 ---
+./venv/bin/python scripts/25_cycle5_setup.py      | tee data/derived/out_25.txt
+./venv/bin/python scripts/26_cycle5_rankings.py   | tee data/derived/out_26.txt
+./venv/bin/python scripts/27_cycle5_decisions.py  | tee data/derived/out_27.txt
 echo "done"

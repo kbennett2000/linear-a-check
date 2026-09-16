@@ -32,6 +32,13 @@ the seven rules that had to be added, and
 [reports/cycle-04-formula-matches.csv](reports/cycle-04-formula-matches.csv) every
 root the seven formula words can match.
 
+**Cycle 5 ([reports/cycle-05.md](reports/cycle-05.md))** — test one claim: that
+/na/ is the only sound that fits every occurrence of the sign *301. Every other
+sound is tried in its place, and the same test is run on three signs whose sounds
+are already known, as a control.
+[reports/cycle-05-rankings.csv](reports/cycle-05-rankings.csv) has every candidate
+ranked, for every sign tested, under both rule sets.
+
 No cycle so far draws any conclusion about the language.
 
 ## Credit

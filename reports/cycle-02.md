@@ -1,6 +1,6 @@
 # Cycle 2 — every reading the paper prints, checked against the corpus
 
-**Date run:** 17 September 2026
+**Date run:** 16 September 2026
 **Scope:** build a table of every Linear A word the paper gives a reading or a
 meaning for, then check each one against the corpus file from cycle 1. Plus a fix
 to a mistake in cycle 1's report. **No conclusions about the language are drawn in
@@ -27,6 +27,11 @@ The corpus is the Linear A Explorer data (Hogan 2019–).
 > The result is unchanged — the file list is still **unknown** — but the reason
 > is a Zenodo outage, not this machine's network. Nothing else in this report has
 > been changed.
+
+> **Correction — 16 September 2026 (cycle 5).** The header date above read
+> "17 September 2026". That was wrong: the machine's date for cycles 2, 3 and 4
+> was 16 September 2026, the same day as cycle 1. The header now reads
+> 16 September 2026. Nothing else in this report has been changed.
 
 Terms used below, defined on first use. A **sign-group** is what Linear A scholars
 call a written word: a run of signs between two dividers. A **word divider** is the

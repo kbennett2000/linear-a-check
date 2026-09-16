@@ -96,20 +96,78 @@ UNMATCHABLE_NOTE = ('no sound value in the rules table: other starred sign '
                     'numbers, word signs, numbers and fractions')
 
 
-def sign_kind(s):
-    if s in VOWEL_SIGNS:
-        return 'vowel'
-    if s in VALUES:
-        return 'consonant'
-    return 'unmatchable'
+class Alphabet:
+    """What each sign may stand for, for one run of the matcher.
+
+    Cycle 5 needs to hand a sign a different sound from the one the rules give
+    it, so the sign table is bundled here instead of being read straight off the
+    module globals.  Built with no arguments it is exactly the table cycle 4
+    used, so nothing older changes.
+    """
+
+    def __init__(self, values=None, value_rules=None, vowels=None):
+        self.values = dict(VALUES) if values is None else dict(values)
+        self.rules = dict(VALUE_RULES) if value_rules is None else dict(value_rules)
+        self.vowels = set(VOWEL_SIGNS) if vowels is None else set(vowels)
+        self.stop_signs = {nm for nm, v in self.values.items()
+                           if any(x in STOPS for x in v)}
+
+    def kind(self, s):
+        if s in self.vowels:
+            return 'vowel'
+        if s in self.values:
+            return 'consonant'
+        return 'unmatchable'
+
+    def vals(self, sign, on):
+        """The sounds a sign may stand for, under the rules switched on.
+
+        Switching off 'TH' is the "ways of writing ṯ" ablation of cycle 4's
+        Step 3: it takes ṯ out of the T-series (R11) and the Z-series (R16),
+        and leaves AB79 (R27) with no value at all.
+        """
+        v = self.values[sign]
+        if 'TH' not in on:
+            v = tuple(x for x in v if x != 'ṯ')
+        return v
+
+    def replace(self, sign, sounds, rules, as_vowel=False):
+        """A copy with one sign given a different value."""
+        a = Alphabet(self.values, self.rules, self.vowels)
+        a.vowels.discard(sign)
+        a.values.pop(sign, None)
+        a.rules.pop(sign, None)
+        if as_vowel:
+            a.vowels.add(sign)
+        elif sounds:
+            a.values[sign] = tuple(sounds)
+            a.rules[sign] = frozenset(rules)
+        a.stop_signs = {nm for nm, v in a.values.items()
+                        if any(x in STOPS for x in v)}
+        return a
+
+
+_DEFAULT_ALPHA = None
+
+
+def default_alphabet():
+    global _DEFAULT_ALPHA
+    if _DEFAULT_ALPHA is None:
+        _DEFAULT_ALPHA = Alphabet()
+    return _DEFAULT_ALPHA
+
+
+def sign_kind(s, alpha=None):
+    return (alpha or default_alphabet()).kind(s)
 
 
 def word_signs(word):
     return [p for p in word.split('-') if p]
 
 
-def unmatchable_signs(signs):
-    return [s for s in signs if sign_kind(s) == 'unmatchable']
+def unmatchable_signs(signs, alpha=None):
+    a = alpha or default_alphabet()
+    return [s for s in signs if a.kind(s) == 'unmatchable']
 
 
 # --------------------------------------------------------------------------
@@ -282,19 +340,6 @@ def load_hebrew(which='primitive'):
 # --------------------------------------------------------------------------
 # 4.  The match itself
 # --------------------------------------------------------------------------
-def vals_for(sign, on):
-    """The sounds a sign may stand for, under the rules currently switched on.
-
-    Switching off 'TH' is the "ways of writing ṯ" ablation of Step 3: it takes
-    ṯ out of the T-series (R11) and the Z-series (R16), and leaves AB79 (R27)
-    with no value at all.
-    """
-    v = VALUES[sign]
-    if 'TH' not in on:
-        v = tuple(x for x in v if x != 'ṯ')
-    return v
-
-
 def rank(rules, sound):
     """How much a match leans on the rules.  Lower is simpler.
 
@@ -317,13 +362,20 @@ DEFAULT_ON = frozenset(
 # the matcher as it stood before cycle 4 added anything
 BASELINE_ON = frozenset(r for r in DEFAULT_ON if not r.startswith('N')) - {'R62'}
 
+# Cycle 5 onward.  R63 (the same initial-JA weakening, at Zakros) is only switched
+# on once every word being tested has a site to check it against; cycle 4 worked
+# from the paper's printed words, which do not all have one.
+CYCLE5_ON = DEFAULT_ON | {'R63'}
 
-def match_signs(signs, trie, on=DEFAULT_ON, following=None):
+
+def match_signs(signs, trie, on=DEFAULT_ON, following=None, alpha=None,
+                sites=None):
     """All skeletons the sign run can spell.  -> {skeleton: (entry, rules, sm)}
 
     `following` is the first sign of whatever was taken off the end, if any.
     R22 needs it to see whether an unwritten /s/ stands before a stop.
     """
+    alpha = alpha or default_alphabet()
     signs = tuple(signs)
     n = len(signs)
     memo = {}
@@ -352,7 +404,7 @@ def match_signs(signs, trie, on=DEFAULT_ON, following=None):
                 rules = {'R07'} | ({'R21'} if letter == 'ḥ' else set())
             elif letter == 's' and 'R22' in on and (
                     child.has_stop_child()
-                    or (i == n and following in STOP_SIGNS)):
+                    or (i == n and following in alpha.stop_signs)):
                 # R22: a syllable-final /s/ is unwritten before a stop.  The
                 # stop may be the next root letter, or -- as in
                 # U-NA-RU-KA-NA-TI = hunna lu kanasiti -- the first sign of the
@@ -360,11 +412,20 @@ def match_signs(signs, trie, on=DEFAULT_ON, following=None):
                 rules = {'R22'}
             elif letter == 'r' and 'R24' in on and child.kids:
                 rules = {'R24'}
-            elif (letter == 'y' and node.depth == 0 and 'R62' in on):
-                # R62/R63: an initial JA- is dropped (Palaikastro, and perhaps
-                # Zakros).  Applied without checking which site the inscription
-                # comes from -- see the note in reports/cycle-04.md.
-                rules = {'R62'}
+            elif letter == 'y' and node.depth == 0 and (
+                    'R62' in on or 'R63' in on):
+                # R62: an initial JA- is dropped at Palaikastro.  R63: the same
+                # weakening may extend to Zakros.  Cycle 4 applied this without
+                # checking the site; from cycle 5 on, `sites` names the sites
+                # the word is actually found at, and the rule only fires there.
+                # sites=None keeps cycle 4's site-blind behaviour.
+                rules = None
+                if sites is None:
+                    rules = {'R62'} if 'R62' in on else {'R63'}
+                elif 'Palaikastro' in sites and 'R62' in on:
+                    rules = {'R62'}
+                elif 'Zakros' in sites and 'R63' in on:
+                    rules = {'R63'}
             elif (letter == 'w' and node.depth == 1 and 1 in child.dists
                   and 'N04' in on):
                 rules = {'N04'}
@@ -379,7 +440,7 @@ def match_signs(signs, trie, on=DEFAULT_ON, following=None):
 
         if i < n:
             s = signs[i]
-            kind = sign_kind(s)
+            kind = alpha.kind(s)
             if kind == 'unmatchable':
                 pass
             elif kind == 'vowel':
@@ -417,14 +478,14 @@ def match_signs(signs, trie, on=DEFAULT_ON, following=None):
                     # others, because the paper reads TI-TI as /tt/ in TI-TI-KU
                     # (Appendix B, p.40) -- see reports/cycle-04.md.
                     if 'R17' in on:
-                        for c in vals_for(s, on):
+                        for c in alpha.vals(s, on):
                             for h, flag in hebrew_forms(c):
                                 child = node.kids.get(h)
                                 if child is None:
                                     continue
                                 sub = go(i + 2, child)
                                 if sub:
-                                    add_r = VALUE_RULES[s] | {'R17'}
+                                    add_r = alpha.rules[s] | {'R17'}
                                     if s == 'SA' and c == 'š' and 'R18' in on:
                                         add_r = add_r | {'R18'}
                                     if s in ('TE', 'TI') and c == 'ṯ' and 'R19' in on:
@@ -433,7 +494,7 @@ def match_signs(signs, trie, on=DEFAULT_ON, following=None):
                                     merge(res, {sk: (e, rl | add_r, sm | add_s)
                                                 for sk, (e, rl, sm) in sub.items()})
                 # one sign -> one consonant, or (R08) the same consonant twice
-                for c in vals_for(s, on):
+                for c in alpha.vals(s, on):
                     for h, flag in hebrew_forms(c):
                         child = node.kids.get(h)
                         if child is None:
@@ -441,14 +502,14 @@ def match_signs(signs, trie, on=DEFAULT_ON, following=None):
                         add_s = {flag} if flag else set()
                         sub = go(i + 1, child)
                         if sub:
-                            merge(res, {sk: (e, rl | VALUE_RULES[s], sm | add_s)
+                            merge(res, {sk: (e, rl | alpha.rules[s], sm | add_s)
                                         for sk, (e, rl, sm) in sub.items()})
                         if 'R08' in on:
                             gchild = child.kids.get(h)
                             if gchild is not None:
                                 sub = go(i + 1, gchild)
                                 if sub:
-                                    merge(res, {sk: (e, rl | VALUE_RULES[s] | {'R08'},
+                                    merge(res, {sk: (e, rl | alpha.rules[s] | {'R08'},
                                                      sm | add_s)
                                                 for sk, (e, rl, sm) in sub.items()})
         memo[key] = res
@@ -457,13 +518,14 @@ def match_signs(signs, trie, on=DEFAULT_ON, following=None):
     return go(0, trie)
 
 
-def match_word(word, trie, on=DEFAULT_ON, **kw):
+def match_word(word, trie, on=DEFAULT_ON, alpha=None, sites=None, **kw):
     """Match a whole word.  Returns (results, skipped_reason).
 
     results: {skeleton: {'entry':…, 'rules':set, 'sound':set, 'removed':str}}
     """
+    alpha = alpha or default_alphabet()
     signs = word_signs(word) if isinstance(word, str) else list(word)
-    bad = unmatchable_signs(signs)
+    bad = unmatchable_signs(signs, alpha)
     if bad:
         return {}, 'contains %s (%s)' % (', '.join(sorted(set(bad))),
                                          UNMATCHABLE_NOTE)
@@ -480,7 +542,8 @@ def match_word(word, trie, on=DEFAULT_ON, **kw):
 
     for rest, following, arules, desc in splits(signs, use_affixes=use_affixes,
                                                 on=on, **kw):
-        for sk, (e, rules, sm) in match_signs(rest, trie, on, following).items():
+        for sk, (e, rules, sm) in match_signs(rest, trie, on, following,
+                                             alpha, sites).items():
             take(sk, e, set(rules) | set(arules) | {'R01'}, sm, desc)
         # N07: the word may be a compound of two Semitic words, each with its
         # own root.  The root may then be spelled by a run of signs at either
@@ -492,8 +555,8 @@ def match_word(word, trie, on=DEFAULT_ON, **kw):
         if 'N07' in on and len(rest) > 1:
             for k in range(1, len(rest)):
                 head, tail = rest[:k], rest[k:]
-                hm = match_signs(head, trie, on, tail[0])
-                tm = match_signs(tail, trie, on, following)
+                hm = match_signs(head, trie, on, tail[0], alpha, sites)
+                tm = match_signs(tail, trie, on, following, alpha, sites)
                 if not hm or not tm:
                     continue
                 pre = desc + ' + ' if desc != '(nothing)' else ''
