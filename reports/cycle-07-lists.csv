@@ -1,0 +1,291 @@
+root_list,roots_in_list,word_set,rule_set,n_signs,word_count,coverage,median_roots,mean_roots,matches_per_1000_roots
+Hebrew,1501,real (read by the paper),full,2,9,1.0,76,86.89,57.89
+Hebrew,1501,real (read by the paper),full,3,23,1.0,145,143.91,95.88
+Hebrew,1501,real (read by the paper),full,4,33,1.0,168,156.97,104.58
+Hebrew,1501,real (read by the paper),full,5,14,1.0,174.0,169.43,112.88
+Hebrew,1501,real (read by the paper),full,6,12,1.0,176.5,180.42,120.2
+Hebrew,1501,real (read by the paper),full,7,3,1.0,171,187.33,124.81
+Hebrew,1501,real (read by the paper),full,8,2,0.5,5.0,5,3.33
+Hebrew,1501,real (read by the paper),full,all,96,0.9896,146.0,149.8,99.8
+Hebrew,1501,real (never read),full,2,278,1.0,91.0,97.04,64.65
+Hebrew,1501,real (never read),full,3,265,1.0,136,133.76,89.12
+Hebrew,1501,real (never read),full,4,103,1.0,140,147.88,98.52
+Hebrew,1501,real (never read),full,5,30,0.9667,157.0,143.13,95.36
+Hebrew,1501,real (never read),full,6,8,0.875,96.5,88.38,58.88
+Hebrew,1501,real (never read),full,7,4,1.0,56.0,78,51.97
+Hebrew,1501,real (never read),full,9,1,0.0,0,0,0.0
+Hebrew,1501,real (never read),full,16,1,0.0,0,0,0.0
+Hebrew,1501,real (never read),full,19,1,0.0,0,0,0.0
+Hebrew,1501,real (never read),full,all,691,0.9928,119,120.07,79.99
+Hebrew,1501,Linear A-like,full,2,2870,1.0,90.0,96.23,64.11
+Hebrew,1501,Linear A-like,full,3,2880,1.0,135.0,133.34,88.83
+Hebrew,1501,Linear A-like,full,4,1360,0.9985,145.0,143.22,95.42
+Hebrew,1501,Linear A-like,full,5,440,0.9545,117.0,117.36,78.19
+Hebrew,1501,Linear A-like,full,6,200,0.805,50.5,79.1,52.7
+Hebrew,1501,Linear A-like,full,7,70,0.4714,0.0,30.63,20.41
+Hebrew,1501,Linear A-like,full,8,20,0.3,0.0,16.55,11.03
+Hebrew,1501,Linear A-like,full,9,10,0.0,0.0,0,0.0
+Hebrew,1501,Linear A-like,full,16,10,0.0,0.0,0,0.0
+Hebrew,1501,Linear A-like,full,19,10,0.0,0.0,0,0.0
+Hebrew,1501,Linear A-like,full,all,7870,0.982,117.0,117.53,78.3
+Hebrew,1501,real (read by the paper),stated only,2,9,1.0,12,17.89,11.92
+Hebrew,1501,real (read by the paper),stated only,3,23,0.8696,13,25.83,17.21
+Hebrew,1501,real (read by the paper),stated only,4,33,0.6364,2,12.85,8.56
+Hebrew,1501,real (read by the paper),stated only,5,14,0.5,0.5,13.64,9.09
+Hebrew,1501,real (read by the paper),stated only,6,12,0.5,0.5,5.25,3.5
+Hebrew,1501,real (read by the paper),stated only,7,3,0.6667,38,42.67,28.43
+Hebrew,1501,real (read by the paper),stated only,8,2,0.0,0.0,0,0.0
+Hebrew,1501,real (read by the paper),stated only,all,96,0.6771,4.0,16.26,10.83
+Hebrew,1501,real (never read),stated only,2,278,0.9928,20.0,23.43,15.61
+Hebrew,1501,real (never read),stated only,3,265,0.8113,6,14.45,9.62
+Hebrew,1501,real (never read),stated only,4,103,0.534,1,6.65,4.43
+Hebrew,1501,real (never read),stated only,5,30,0.2667,0.0,1.7,1.13
+Hebrew,1501,real (never read),stated only,6,8,0.0,0.0,0,0.0
+Hebrew,1501,real (never read),stated only,7,4,0.0,0.0,0,0.0
+Hebrew,1501,real (never read),stated only,9,1,0.0,0,0,0.0
+Hebrew,1501,real (never read),stated only,16,1,0.0,0,0,0.0
+Hebrew,1501,real (never read),stated only,19,1,0.0,0,0,0.0
+Hebrew,1501,real (never read),stated only,all,691,0.8017,10,16.03,10.68
+Hebrew,1501,Linear A-like,stated only,2,2870,0.9906,19.0,22.07,14.71
+Hebrew,1501,Linear A-like,stated only,3,2880,0.8125,8.0,15.89,10.59
+Hebrew,1501,Linear A-like,stated only,4,1360,0.4765,0.0,6.68,4.45
+Hebrew,1501,Linear A-like,stated only,5,440,0.2045,0.0,2.25,1.5
+Hebrew,1501,Linear A-like,stated only,6,200,0.055,0.0,0.34,0.23
+Hebrew,1501,Linear A-like,stated only,7,70,0.0143,0.0,0.37,0.25
+Hebrew,1501,Linear A-like,stated only,8,20,0.0,0.0,0,0.0
+Hebrew,1501,Linear A-like,stated only,9,10,0.0,0.0,0,0.0
+Hebrew,1501,Linear A-like,stated only,16,10,0.0,0.0,0,0.0
+Hebrew,1501,Linear A-like,stated only,19,10,0.0,0.0,0,0.0
+Hebrew,1501,Linear A-like,stated only,all,7870,0.7539,9.0,15.16,10.1
+Hebrew + Ugaritic,1816,real (read by the paper),full,2,9,1.0,94,103.89,57.21
+Hebrew + Ugaritic,1816,real (read by the paper),full,3,23,1.0,176,170.48,93.88
+Hebrew + Ugaritic,1816,real (read by the paper),full,4,33,1.0,190,186.97,102.96
+Hebrew + Ugaritic,1816,real (read by the paper),full,5,14,1.0,207.5,206.07,113.48
+Hebrew + Ugaritic,1816,real (read by the paper),full,6,12,1.0,220.5,219.25,120.73
+Hebrew + Ugaritic,1816,real (read by the paper),full,7,3,1.0,209,227.67,125.37
+Hebrew + Ugaritic,1816,real (read by the paper),full,8,2,1.0,9.0,9,4.96
+Hebrew + Ugaritic,1816,real (read by the paper),full,all,96,1.0,176.5,179.61,98.91
+Hebrew + Ugaritic,1816,real (never read),full,2,278,1.0,107.0,114.86,63.25
+Hebrew + Ugaritic,1816,real (never read),full,3,265,1.0,161,158.41,87.23
+Hebrew + Ugaritic,1816,real (never read),full,4,103,1.0,166,175.9,96.86
+Hebrew + Ugaritic,1816,real (never read),full,5,30,1.0,185.0,172.07,94.75
+Hebrew + Ugaritic,1816,real (never read),full,6,8,0.875,112.0,105.38,58.03
+Hebrew + Ugaritic,1816,real (never read),full,7,4,1.0,101.0,108.75,59.88
+Hebrew + Ugaritic,1816,real (never read),full,9,1,0.0,0,0,0.0
+Hebrew + Ugaritic,1816,real (never read),full,16,1,0.0,0,0,0.0
+Hebrew + Ugaritic,1816,real (never read),full,19,1,0.0,0,0,0.0
+Hebrew + Ugaritic,1816,real (never read),full,all,691,0.9942,141,142.5,78.47
+Hebrew + Ugaritic,1816,Linear A-like,full,2,2870,1.0,107.0,114.62,63.12
+Hebrew + Ugaritic,1816,Linear A-like,full,3,2880,1.0,159.0,158.37,87.21
+Hebrew + Ugaritic,1816,Linear A-like,full,4,1360,0.9993,173.0,170.87,94.09
+Hebrew + Ugaritic,1816,Linear A-like,full,5,440,0.9591,137.5,140.47,77.35
+Hebrew + Ugaritic,1816,Linear A-like,full,6,200,0.83,65.0,95.52,52.6
+Hebrew + Ugaritic,1816,Linear A-like,full,7,70,0.5143,2.0,37.56,20.68
+Hebrew + Ugaritic,1816,Linear A-like,full,8,20,0.3,0.0,20.05,11.04
+Hebrew + Ugaritic,1816,Linear A-like,full,9,10,0.0,0.0,0,0.0
+Hebrew + Ugaritic,1816,Linear A-like,full,16,10,0.0,0.0,0,0.0
+Hebrew + Ugaritic,1816,Linear A-like,full,19,10,0.0,0.0,0,0.0
+Hebrew + Ugaritic,1816,Linear A-like,full,all,7870,0.9834,137.0,139.95,77.07
+Hebrew + Ugaritic,1816,real (read by the paper),stated only,2,9,1.0,15,21.56,11.87
+Hebrew + Ugaritic,1816,real (read by the paper),stated only,3,23,0.8696,18,30.65,16.88
+Hebrew + Ugaritic,1816,real (read by the paper),stated only,4,33,0.6364,2,15.33,8.44
+Hebrew + Ugaritic,1816,real (read by the paper),stated only,5,14,0.5,1.0,15.64,8.61
+Hebrew + Ugaritic,1816,real (read by the paper),stated only,6,12,0.5,1.0,7,3.85
+Hebrew + Ugaritic,1816,real (read by the paper),stated only,7,3,0.6667,44,51,28.08
+Hebrew + Ugaritic,1816,real (read by the paper),stated only,8,2,0.0,0.0,0,0.0
+Hebrew + Ugaritic,1816,real (read by the paper),stated only,all,96,0.6771,6.0,19.39,10.67
+Hebrew + Ugaritic,1816,real (never read),stated only,2,278,1.0,23.5,27.66,15.23
+Hebrew + Ugaritic,1816,real (never read),stated only,3,265,0.8189,8,17.06,9.39
+Hebrew + Ugaritic,1816,real (never read),stated only,4,103,0.534,1,7.71,4.24
+Hebrew + Ugaritic,1816,real (never read),stated only,5,30,0.2667,0.0,1.93,1.06
+Hebrew + Ugaritic,1816,real (never read),stated only,6,8,0.0,0.0,0,0.0
+Hebrew + Ugaritic,1816,real (never read),stated only,7,4,0.0,0.0,0,0.0
+Hebrew + Ugaritic,1816,real (never read),stated only,9,1,0.0,0,0,0.0
+Hebrew + Ugaritic,1816,real (never read),stated only,16,1,0.0,0,0,0.0
+Hebrew + Ugaritic,1816,real (never read),stated only,19,1,0.0,0,0,0.0
+Hebrew + Ugaritic,1816,real (never read),stated only,all,691,0.8075,12,18.9,10.41
+Hebrew + Ugaritic,1816,Linear A-like,stated only,2,2870,0.9934,23.0,26.43,14.55
+Hebrew + Ugaritic,1816,Linear A-like,stated only,3,2880,0.8247,10.0,18.83,10.37
+Hebrew + Ugaritic,1816,Linear A-like,stated only,4,1360,0.4868,0.0,7.9,4.35
+Hebrew + Ugaritic,1816,Linear A-like,stated only,5,440,0.2136,0.0,2.63,1.45
+Hebrew + Ugaritic,1816,Linear A-like,stated only,6,200,0.065,0.0,0.41,0.23
+Hebrew + Ugaritic,1816,Linear A-like,stated only,7,70,0.0143,0.0,0.43,0.24
+Hebrew + Ugaritic,1816,Linear A-like,stated only,8,20,0.0,0.0,0,0.0
+Hebrew + Ugaritic,1816,Linear A-like,stated only,9,10,0.0,0.0,0,0.0
+Hebrew + Ugaritic,1816,Linear A-like,stated only,16,10,0.0,0.0,0,0.0
+Hebrew + Ugaritic,1816,Linear A-like,stated only,19,10,0.0,0.0,0,0.0
+Hebrew + Ugaritic,1816,Linear A-like,stated only,all,7870,0.7619,11.0,18.06,9.94
+made-up roots,1501,real (read by the paper),full,2,9,1.0,76,78.67,52.41
+made-up roots,1501,real (read by the paper),full,3,23,1.0,136,130.48,86.93
+made-up roots,1501,real (read by the paper),full,4,33,1.0,164,154.39,102.86
+made-up roots,1501,real (read by the paper),full,5,14,1.0,176.5,179.21,119.4
+made-up roots,1501,real (read by the paper),full,6,12,1.0,191.0,154.58,102.99
+made-up roots,1501,real (read by the paper),full,7,3,1.0,199,219.33,146.12
+made-up roots,1501,real (read by the paper),full,8,2,0.5,25.0,25,16.66
+made-up roots,1501,real (read by the paper),full,all,96,0.9896,143.0,144.54,96.3
+made-up roots,1501,real (never read),full,2,278,1.0,87.5,91.31,60.83
+made-up roots,1501,real (never read),full,3,265,1.0,123,123.35,82.18
+made-up roots,1501,real (never read),full,4,103,1.0,139,144.87,96.52
+made-up roots,1501,real (never read),full,5,30,0.9667,164.5,144.83,96.49
+made-up roots,1501,real (never read),full,6,8,0.875,95.0,101.38,67.54
+made-up roots,1501,real (never read),full,7,4,1.0,83.0,93.75,62.46
+made-up roots,1501,real (never read),full,9,1,0.0,0,0,0.0
+made-up roots,1501,real (never read),full,16,1,0.0,0,0,0.0
+made-up roots,1501,real (never read),full,19,1,0.0,0,0,0.0
+made-up roots,1501,real (never read),full,all,691,0.9928,114,113.64,75.71
+made-up roots,1501,Linear A-like,full,2,2870,1.0,89.0,91.9,61.23
+made-up roots,1501,Linear A-like,full,3,2880,1.0,125.0,126.46,84.25
+made-up roots,1501,Linear A-like,full,4,1360,0.9963,140.0,137.94,91.9
+made-up roots,1501,Linear A-like,full,5,440,0.9682,107.5,114.65,76.38
+made-up roots,1501,Linear A-like,full,6,200,0.85,51.0,76.32,50.85
+made-up roots,1501,Linear A-like,full,7,70,0.6,5.0,34.86,23.22
+made-up roots,1501,Linear A-like,full,8,20,0.3,0.0,15.1,10.06
+made-up roots,1501,Linear A-like,full,9,10,0.1,0.0,0.4,0.27
+made-up roots,1501,Linear A-like,full,16,10,0.0,0.0,0,0.0
+made-up roots,1501,Linear A-like,full,19,10,0.0,0.0,0,0.0
+made-up roots,1501,Linear A-like,full,all,7870,0.9848,110.0,112.33,74.83
+made-up roots,1501,real (read by the paper),stated only,2,9,1.0,11,15.89,10.59
+made-up roots,1501,real (read by the paper),stated only,3,23,0.913,15,22.04,14.69
+made-up roots,1501,real (read by the paper),stated only,4,33,0.6061,2,11.24,7.49
+made-up roots,1501,real (read by the paper),stated only,5,14,0.4286,0.0,7.36,4.9
+made-up roots,1501,real (read by the paper),stated only,6,12,0.1667,0.0,2.42,1.61
+made-up roots,1501,real (read by the paper),stated only,7,3,0.6667,27,56.67,37.75
+made-up roots,1501,real (read by the paper),stated only,8,2,0.0,0.0,0,0.0
+made-up roots,1501,real (read by the paper),stated only,all,96,0.625,3.0,13.78,9.18
+made-up roots,1501,real (never read),stated only,2,278,0.9712,18.0,23.08,15.37
+made-up roots,1501,real (never read),stated only,3,265,0.834,5,13.78,9.18
+made-up roots,1501,real (never read),stated only,4,103,0.5728,1,6.87,4.58
+made-up roots,1501,real (never read),stated only,5,30,0.3333,0.0,2.63,1.75
+made-up roots,1501,real (never read),stated only,6,8,0.0,0.0,0,0.0
+made-up roots,1501,real (never read),stated only,7,4,0.0,0.0,0,0.0
+made-up roots,1501,real (never read),stated only,9,1,0.0,0,0,0.0
+made-up roots,1501,real (never read),stated only,16,1,0.0,0,0,0.0
+made-up roots,1501,real (never read),stated only,19,1,0.0,0,0,0.0
+made-up roots,1501,real (never read),stated only,all,691,0.8104,9,15.71,10.46
+made-up roots,1501,Linear A-like,stated only,2,2870,0.9864,19.0,23.6,15.72
+made-up roots,1501,Linear A-like,stated only,3,2880,0.8566,7.0,15.43,10.28
+made-up roots,1501,Linear A-like,stated only,4,1360,0.539,1.0,6.69,4.46
+made-up roots,1501,Linear A-like,stated only,5,440,0.2568,0.0,2.06,1.37
+made-up roots,1501,Linear A-like,stated only,6,200,0.085,0.0,0.39,0.26
+made-up roots,1501,Linear A-like,stated only,7,70,0.0143,0.0,0.64,0.43
+made-up roots,1501,Linear A-like,stated only,8,20,0.0,0.0,0,0.0
+made-up roots,1501,Linear A-like,stated only,9,10,0.0,0.0,0,0.0
+made-up roots,1501,Linear A-like,stated only,16,10,0.0,0.0,0,0.0
+made-up roots,1501,Linear A-like,stated only,19,10,0.0,0.0,0,0.0
+made-up roots,1501,Linear A-like,stated only,all,7870,0.783,8.0,15.54,10.35
+English,1501,real (read by the paper),full,2,9,1.0,21,20,13.32
+English,1501,real (read by the paper),full,3,23,0.9565,40,41,27.32
+English,1501,real (read by the paper),full,4,33,1.0,46,48.33,32.2
+English,1501,real (read by the paper),full,5,14,1.0,52.0,59.5,39.64
+English,1501,real (read by the paper),full,6,12,1.0,45.5,54.83,36.53
+English,1501,real (read by the paper),full,7,3,1.0,96,102.33,68.18
+English,1501,real (read by the paper),full,8,2,1.0,12.0,12,7.99
+English,1501,real (read by the paper),full,all,96,0.9896,43.5,47.29,31.51
+English,1501,real (never read),full,2,278,0.9928,22.0,22.24,14.82
+English,1501,real (never read),full,3,265,0.9887,38,38.74,25.81
+English,1501,real (never read),full,4,103,1.0,46,51.38,34.23
+English,1501,real (never read),full,5,30,1.0,61.0,56.93,37.93
+English,1501,real (never read),full,6,8,1.0,33.5,39.75,26.48
+English,1501,real (never read),full,7,4,1.0,33.5,30.75,20.49
+English,1501,real (never read),full,9,1,0.0,0,0,0.0
+English,1501,real (never read),full,16,1,0.0,0,0,0.0
+English,1501,real (never read),full,19,1,0.0,0,0,0.0
+English,1501,real (never read),full,all,691,0.9884,32,34.57,23.03
+English,1501,Linear A-like,full,2,2870,0.9923,21.0,22.54,15.02
+English,1501,Linear A-like,full,3,2880,0.9938,36.0,38.12,25.39
+English,1501,Linear A-like,full,4,1360,0.9919,46.0,48.67,32.43
+English,1501,Linear A-like,full,5,440,0.9841,43.0,48.21,32.12
+English,1501,Linear A-like,full,6,200,0.93,28.0,37.39,24.91
+English,1501,Linear A-like,full,7,70,0.6857,10.0,22.71,15.13
+English,1501,Linear A-like,full,8,20,0.3,0.0,12,7.99
+English,1501,Linear A-like,full,9,10,0.2,0.0,0.5,0.33
+English,1501,Linear A-like,full,16,10,0.0,0.0,0,0.0
+English,1501,Linear A-like,full,19,10,0.0,0.0,0,0.0
+English,1501,Linear A-like,full,all,7870,0.9827,31.0,34.46,22.96
+English,1501,real (read by the paper),stated only,2,9,0.8889,3,3.44,2.29
+English,1501,real (read by the paper),stated only,3,23,0.913,7,7.96,5.3
+English,1501,real (read by the paper),stated only,4,33,0.7879,4,5.3,3.53
+English,1501,real (read by the paper),stated only,5,14,0.6429,2.0,3.5,2.33
+English,1501,real (read by the paper),stated only,6,12,0.5,0.5,2.67,1.78
+English,1501,real (read by the paper),stated only,7,3,0.6667,14,18.33,12.21
+English,1501,real (read by the paper),stated only,8,2,0.0,0.0,0,0.0
+English,1501,real (read by the paper),stated only,all,96,0.75,3.0,5.47,3.64
+English,1501,real (never read),stated only,2,278,0.8741,4.0,4.56,3.04
+English,1501,real (never read),stated only,3,265,0.8453,4,5.19,3.46
+English,1501,real (never read),stated only,4,103,0.6602,2,3.72,2.48
+English,1501,real (never read),stated only,5,30,0.3333,0.0,1.8,1.2
+English,1501,real (never read),stated only,6,8,0.0,0.0,0,0.0
+English,1501,real (never read),stated only,7,4,0.0,0.0,0,0.0
+English,1501,real (never read),stated only,9,1,0.0,0,0,0.0
+English,1501,real (never read),stated only,16,1,0.0,0,0,0.0
+English,1501,real (never read),stated only,19,1,0.0,0,0,0.0
+English,1501,real (never read),stated only,all,691,0.7887,3,4.46,2.97
+English,1501,Linear A-like,stated only,2,2870,0.8495,3.0,4.55,3.03
+English,1501,Linear A-like,stated only,3,2880,0.8753,4.0,5.73,3.82
+English,1501,Linear A-like,stated only,4,1360,0.5721,2.0,3.75,2.5
+English,1501,Linear A-like,stated only,5,440,0.2682,0.0,1.64,1.09
+English,1501,Linear A-like,stated only,6,200,0.11,0.0,0.47,0.31
+English,1501,Linear A-like,stated only,7,70,0.0143,0.0,0.29,0.19
+English,1501,Linear A-like,stated only,8,20,0.0,0.0,0,0.0
+English,1501,Linear A-like,stated only,9,10,0.0,0.0,0,0.0
+English,1501,Linear A-like,stated only,16,10,0.0,0.0,0,0.0
+English,1501,Linear A-like,stated only,19,10,0.0,0.0,0,0.0
+English,1501,Linear A-like,stated only,all,7870,0.7469,3.0,4.51,3.01
+the paper's stated roots,46,real (read by the paper),full,2,9,0.5556,2,2.11,45.89
+the paper's stated roots,46,real (read by the paper),full,3,23,0.8696,2,2.61,56.71
+the paper's stated roots,46,real (read by the paper),full,4,33,0.7273,2,2.33,50.72
+the paper's stated roots,46,real (read by the paper),full,5,14,0.7857,4.0,4,86.96
+the paper's stated roots,46,real (read by the paper),full,6,12,0.75,3.0,4.08,88.77
+the paper's stated roots,46,real (read by the paper),full,7,3,1.0,8,7.67,166.67
+the paper's stated roots,46,real (read by the paper),full,8,2,0.0,0.0,0,0.0
+the paper's stated roots,46,real (read by the paper),full,all,96,0.75,3.0,2.96,64.31
+the paper's stated roots,46,real (never read),full,2,278,0.6115,1.0,1.52,33.0
+the paper's stated roots,46,real (never read),full,3,265,0.5472,1,1.82,39.46
+the paper's stated roots,46,real (never read),full,4,103,0.4854,0,1.84,40.1
+the paper's stated roots,46,real (never read),full,5,30,0.4,0.0,1.4,30.43
+the paper's stated roots,46,real (never read),full,6,8,0.125,0.0,0.25,5.43
+the paper's stated roots,46,real (never read),full,7,4,0.0,0.0,0,0.0
+the paper's stated roots,46,real (never read),full,9,1,0.0,0,0,0.0
+the paper's stated roots,46,real (never read),full,16,1,0.0,0,0,0.0
+the paper's stated roots,46,real (never read),full,19,1,0.0,0,0,0.0
+the paper's stated roots,46,real (never read),full,all,691,0.547,1,1.65,35.77
+the paper's stated roots,46,Linear A-like,full,2,2870,0.5739,1.0,1.44,31.37
+the paper's stated roots,46,Linear A-like,full,3,2880,0.5823,1.0,1.92,41.83
+the paper's stated roots,46,Linear A-like,full,4,1360,0.4779,0.0,1.84,39.98
+the paper's stated roots,46,Linear A-like,full,5,440,0.3341,0.0,1.25,27.17
+the paper's stated roots,46,Linear A-like,full,6,200,0.195,0.0,0.73,15.87
+the paper's stated roots,46,Linear A-like,full,7,70,0.0429,0.0,0.13,2.8
+the paper's stated roots,46,Linear A-like,full,8,20,0.05,0.0,0.1,2.17
+the paper's stated roots,46,Linear A-like,full,9,10,0.0,0.0,0,0.0
+the paper's stated roots,46,Linear A-like,full,16,10,0.0,0.0,0,0.0
+the paper's stated roots,46,Linear A-like,full,19,10,0.0,0.0,0,0.0
+the paper's stated roots,46,Linear A-like,full,all,7870,0.5291,1.0,1.64,35.61
+the paper's stated roots,46,real (read by the paper),stated only,2,9,0.3333,0,0.44,9.66
+the paper's stated roots,46,real (read by the paper),stated only,3,23,0.6087,1,1.09,23.63
+the paper's stated roots,46,real (read by the paper),stated only,4,33,0.303,0,0.45,9.88
+the paper's stated roots,46,real (read by the paper),stated only,5,14,0.4286,0.0,0.64,13.98
+the paper's stated roots,46,real (read by the paper),stated only,6,12,0.4167,0.0,0.92,19.93
+the paper's stated roots,46,real (read by the paper),stated only,7,3,0.6667,1,2,43.48
+the paper's stated roots,46,real (read by the paper),stated only,8,2,0.0,0.0,0,0.0
+the paper's stated roots,46,real (read by the paper),stated only,all,96,0.4167,0.0,0.73,15.85
+the paper's stated roots,46,real (never read),stated only,2,278,0.3633,0.0,0.55,11.89
+the paper's stated roots,46,real (never read),stated only,3,265,0.2415,0,0.34,7.38
+the paper's stated roots,46,real (never read),stated only,4,103,0.1262,0,0.17,3.59
+the paper's stated roots,46,real (never read),stated only,5,30,0.1,0.0,0.1,2.17
+the paper's stated roots,46,real (never read),stated only,6,8,0.0,0.0,0,0.0
+the paper's stated roots,46,real (never read),stated only,7,4,0.0,0.0,0,0.0
+the paper's stated roots,46,real (never read),stated only,9,1,0.0,0,0,0.0
+the paper's stated roots,46,real (never read),stated only,16,1,0.0,0,0,0.0
+the paper's stated roots,46,real (never read),stated only,19,1,0.0,0,0,0.0
+the paper's stated roots,46,real (never read),stated only,all,691,0.2619,0,0.38,8.24
+the paper's stated roots,46,Linear A-like,stated only,2,2870,0.3345,0.0,0.59,12.79
+the paper's stated roots,46,Linear A-like,stated only,3,2880,0.2861,0.0,0.45,9.82
+the paper's stated roots,46,Linear A-like,stated only,4,1360,0.1412,0.0,0.21,4.49
+the paper's stated roots,46,Linear A-like,stated only,5,440,0.0477,0.0,0.07,1.53
+the paper's stated roots,46,Linear A-like,stated only,6,200,0.03,0.0,0.03,0.65
+the paper's stated roots,46,Linear A-like,stated only,7,70,0.0,0.0,0,0.0
+the paper's stated roots,46,Linear A-like,stated only,8,20,0.0,0.0,0,0.0
+the paper's stated roots,46,Linear A-like,stated only,9,10,0.0,0.0,0,0.0
+the paper's stated roots,46,Linear A-like,stated only,16,10,0.0,0.0,0,0.0
+the paper's stated roots,46,Linear A-like,stated only,19,10,0.0,0.0,0,0.0
+the paper's stated roots,46,Linear A-like,stated only,all,7870,0.2545,0.0,0.42,9.13

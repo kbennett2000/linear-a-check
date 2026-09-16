@@ -46,4 +46,11 @@ node    scripts/18_dump_hebrew.js                 | tee data/derived/out_18.txt
 # --- cycle 6 ---
 ./venv/bin/python scripts/28_cycle6_sets.py       | tee data/derived/out_28.txt
 ./venv/bin/python scripts/29_cycle6_match.py      | tee data/derived/out_29.txt
+
+# --- cycle 7 ---
+# Needs three more downloads into data/raw/ (see reports/cycle-07.md for URLs
+# and hashes): ugaritic_lexicon.txt, google-10000-english-no-swears.txt, cmudict.dict
+./venv/bin/python scripts/30_cycle7_lists.py      | tee data/derived/out_30.txt
+./venv/bin/python scripts/31_cycle7_compare.py    | tee data/derived/out_31.txt
+./venv/bin/python scripts/32_cycle7_throat.py     | tee data/derived/out_32.txt
 echo "done"

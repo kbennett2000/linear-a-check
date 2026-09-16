@@ -45,6 +45,13 @@ more easily than scrambled or invented words do?
 [reports/cycle-06-sets.csv](reports/cycle-06-sets.csv) has the counts for every
 word set, rule set and word length.
 
+**Cycle 7 ([reports/cycle-07.md](reports/cycle-07.md))** — does the word list
+matter? Cycle 6's test is re-run against four root lists: Strong's Hebrew, the
+same plus Ugaritic verb roots, a list of invented roots with Hebrew's size and
+letter mix, and a list built from common English words.
+[reports/cycle-07-lists.csv](reports/cycle-07-lists.csv) has the counts for
+every list, word set, rule set and word length.
+
 No cycle so far draws any conclusion about the language.
 
 ## Credit
@@ -63,6 +70,19 @@ The Hebrew word list used from cycle 3 on is built from Strong's Hebrew dictiona
 (James Strong, 1894, public domain), JSON edition by
 [Open Scriptures](https://github.com/openscriptures/strongs), released under
 CC BY-SA. The derived list is not committed.
+
+The Ugaritic verb roots used in cycle 7 come from the **Copenhagen Ugaritic
+Corpus** ([DT-UCPH/cuc](https://github.com/DT-UCPH/cuc)), University of
+Copenhagen, released under
+[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). It is used here
+for non-commercial research; neither it nor any list built from it is
+redistributed in this repository.
+
+English pronunciations in cycle 7 come from the **CMU Pronouncing Dictionary**
+([cmusphinx/cmudict](https://github.com/cmusphinx/cmudict)), Carnegie Mellon
+University, BSD-style licence. The English word list is
+[first20hours/google-10000-english](https://github.com/first20hours/google-10000-english),
+derived from the Google Web Trillion Word Corpus, MIT licence.
 
 ## Layout
 
