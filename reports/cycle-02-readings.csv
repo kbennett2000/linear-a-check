@@ -1,0 +1,168 @@
+word,where,inscription,corpus_id,reading,meaning,confidence,group,allowance,note
+A-KA-NU,"Appendix A, p.36",KN Zc 7,KNZc7,ʾagānu,bowl,CONFIRMED,different word breaks,,corpus writes it inside the longer word A-KA-NU-ZA-TI
+ZA-TI,"Appendix A, p.36",KN Zc 7,KNZc7,ḏāti,of (fs genitive relative),PROBABLE,different word breaks,,corpus writes it inside the longer word A-KA-NU-ZA-TI
+DU-RA-RE,"Appendix A, p.36",KN Zc 7,KNZc7,durar,"freedom, purity",PROBABLE,exact,,
+A-*79-RA,"Appendix A, p.36",KN Zc 7,KNZc7,ʾAṯirat,Athirat (the Goddess),CANDIDATE,"same word, different spelling","AB79: paper writes *79, corpus writes ZU",corpus has A-ZU-RA
+JA-SA-RA,"Appendix A, p.36",KN Zc 7,KNZc7,yašara,righteous,PROBABLE,different word breaks,,corpus writes it inside the longer word JA-SA-RA-A-NA-NE
+A-NA-NE,"Appendix A, p.36",KN Zc 7,KNZc7,ḥanān,grace,CANDIDATE,different word breaks,,corpus writes it inside the longer word JA-SA-RA-A-NA-NE
+WI-PI,"Appendix A, p.36",KN Zc 7,KNZc7,wīpī,and my mouth,SPECULATIVE,exact,,
+*79-DU,"Appendix A (AB79 note), p.36",HT 51b,HT51b,ṯudu,breast,,"same word, different spelling","AB79: paper writes *79, corpus writes ZU",corpus has ZU-DU
+*79-DU,"Appendix A (AB79 note), p.36",HT 99b,HT99b,ṯudu,breast,,"same word, different spelling","AB79: paper writes *79, corpus writes ZU",corpus has ZU-DU
+MA-*79,"Appendix A (AB79 note), p.36",HT 102,HT102,maṯu,man,,"same word, different spelling","AB79: paper writes *79, corpus writes ZU",corpus has MA-ZU
+*79-RI-NI-MA,"Appendix A (AB79 note), p.36",KN Zb 52,KNZb52,Ṯawrinima,"a ""bull"" name",,"same word, different spelling","AB79: paper writes *79, corpus writes ZU",corpus has ZU-RI-NI-MA
+A-TA-I-*301-WA-JA,"§4.1, pp.4-6",IO Za 2,IOZa2,ʾatainawaya,I make myself a dwelling,,exact,,
+JA-DI-KI-TU,"§4.2, pp.6-7",IO Za 2,IOZa2,yā Diqqitu,O Diqqitu! (the mountain goddess),,exact,,
+JA-SA-SA-RA-ME,"§4.3, pp.7-8",IO Za 2,IOZa2,yašāram,in (the spirit of) righteousness,,exact,,
+JA-SA-RA,"§4.3, p.8",KN Zc 7,KNZc7,yašar-,"righteous (same root, single SA)",,different word breaks,,corpus writes it inside the longer word JA-SA-RA-A-NA-NE
+SA-SA-RA-ME,"§4.3, p.8",PK Za 11,PKZa11,(yašāram without JA-),"righteousness, JA-less variant",,exact,,
+A-SA-SA-RA,"§4.3, p.8",PK Za 4,PKZa4,(yašāram without JA-),"righteousness, standalone inscription",,exact,,
+I-MI-SA-RA,"§4.3, p.8",HT 27a,HT27a,(Mīšaru),"divine recipient, ""righteousness""",,exact,,
+TI-NI-TA,"§4.3, p.8",HT 27a,HT27a,Tinit,the Goddess Tinit,,exact,,
+QA-QA-RU,"§4.3 n.13, p.8",HT 118,HT118,qaqqaru,ground,,exact,,
+QA-QA-RU,"§4.3 n.13, p.8",HT 122b,HT122b,qaqqaru,ground,,exact,,
+QA-QA-RU,"§4.3 n.13, p.8",HT 93a,HT93a,qaqqaru,ground,,exact,,
+U-NA-KA-NA-SI,"§5.1, p.9",IO Za 2,IOZa2,hunna kanasī,"behold, my assembly!",,exact,,
+U-NA-RU-KA-NA-SI,"§5.1, p.9",IO Za 16,IOZa16,hunna lū kanasī,"behold, may my assembly gather!",,exact,,
+RA-KI-NI-SE,"§5.1, p.9",SY Zb 7,SYZb7,la-kinnisēt,for the assembly,,exact,,
+I-PI-NA-MA,"§5.2, p.10",IO Za 2,IOZa2,ʾipinama,in the presence of,,exact,,
+SI-RU-TE,"§5.3, pp.10-11",IO Za 2,IOZa2,šīrūt,"sacred worship, ministry",,exact,,
+TA-NA-RA-TE-U-TI-NU,"§6.1, pp.12-13",IO Za 2,IOZa2,tana-raṣē-ū-tī-nū,may she be accepted for you,,exact,,
+A-RE-TU-MI,"§6.1, p.12",ZA 7a,ZA7a,ʾarṣ-ummī,Earth is my mother,,exact,,
+*301-SI,"§4.1 n.10, p.5",TI Zb 1,TIZb1,nāśī,prince,,exact,,
+TE-*301,"§4.1 n.10, p.5",HT 8a,HT8a,tēna,fig,,exact,,
+NA-TU-*301-NE,"§4.1 n.10, p.5",SKO Zc 1,SKOZc1,natūnān,the dedicated one,,exact,,
+A-TA-I-NA-WA-JA,"§7 table, p.14",IO Za 2,IOZa2,ʾatainawaya,I make myself a dwelling,,"same word, different spelling",paper writes NA where the corpus writes *301,corpus has A-TA-I-*301-WA-JA
+JA-DI-KI-TU,"§7 table, p.14",IO Za 2,IOZa2,yā Diqqitu,O Diqqitu!,,exact,,
+JA-SA-SA-RA-ME,"§7 table, p.14",IO Za 2,IOZa2,yašāram,in (the spirit of) righteousness,,exact,,
+U-NA-KA-NA-SI,"§7 table, p.14",IO Za 2,IOZa2,hunna kanasī,"Behold, my assembly!",,exact,,
+I-PI-NA-MA,"§7 table, p.14",IO Za 2,IOZa2,ʾipinama,in the presence of,,exact,,
+SI-RU-TE,"§7 table, p.14",IO Za 2,IOZa2,šīrūt,sacred worship,,exact,,
+TA-NA-RA-TE-U-TI-NU,"§7 table, p.14",IO Za 2,IOZa2,tana-raṣē-ū-tī-nū,May she be accepted for you,,exact,,
+I,"§7 table, p.14",IO Za 2,IOZa2,(CH008),"""hand"" (left untranslated)",,exact,,
+SI-KI-NE,"§7, p.14",HT 116a,HT116a,šikinēt,"recipient title, cf. Linear B potnia",,exact,,
+TU-ME,"§7, p.15",PK Za 14,PKZa14,tōm,perfection (tōm wāyōšer),,exact,,
+TU-ME-I,"§7, p.15",PK Za 8,PKZa8,tōm,perfection,,exact,,
+DU-RA-RE,"§7, p.15",KN Zc 7,KNZc7,(√d-r-r),"to purify, be free",,exact,,
+A-TH-RA,"§7, p.15",KN Zc 7,KNZc7,ʾAṯirat,Athirat,,"same word, different spelling","AB79: paper writes TH, corpus writes ZU",corpus has A-ZU-RA
+JA-SA-RA,"§7, p.15",KN Zc 7,KNZc7,yašar-,righteous,,different word breaks,,corpus writes it inside the longer word JA-SA-RA-A-NA-NE
+A-TA-I-*301-WA-JA,"§8 table, p.16",IO Za 2,IOZa2,,"position 1, invocation",,exact,,
+JA-DI-KI-TU,"§8 table, p.16",IO Za 2,IOZa2,,"position 2, deity/site",,exact,,
+JA-SA-SA-RA-ME,"§8 table, p.16",IO Za 2,IOZa2,,"position 3, righteousness",,exact,,
+U-NA-KA-NA-SI,"§8 table, p.16",IO Za 2,IOZa2,,"position 4, gathering",,exact,,
+I-PI-NA-MA,"§8 table, p.16",IO Za 2,IOZa2,,"position 5, presence",,exact,,
+SI-RU-TE,"§8 table, p.16",IO Za 2,IOZa2,,"position 6, sacred ministry",,exact,,
+TA-NA-RA-TE-U-TI-NU,"§8 table, p.16",IO Za 2,IOZa2,,"position 7, petition",,exact,,
+TA-NA-I-*301-U-TI-NU,"§8 table, p.16",IO Za 6,IOZa6,,"position 1, invocation",,exact,,
+I-NA-TA,"§8 table, p.16",IO Za 6,IOZa6,ʿInat,"position 2, deity; Anat",,different word breaks,,corpus writes it inside the longer word I-NA-TA-I-ZU-DI-SI-KA
+I-*79-DI-SI-KA,"§8 table, p.16",IO Za 6,IOZa6,,"position 2, deity/site (cont.)",,different word breaks,"AB79: paper writes *79, corpus writes ZU",corpus writes it inside the longer word I-NA-TA-I-ZU-DI-SI-KA
+JA-SA-SA-RA-ME,"§8 table, p.16",IO Za 6,IOZa6,,"position 3, righteousness",,exact,,
+A-TA-I-*301-WA-JA,"§8 table, p.16",TL Za 1,TLZa1,,"position 1, invocation",,exact,,
+O-SU-QA-RE,"§8 table, p.16",TL Za 1,TLZa1,,"position 2, deity/site",,exact,,
+JA-SA-SA-RA-ME,"§8 table, p.16",TL Za 1,TLZa1,,"position 3, righteousness",,exact,,
+U-NA-KA-NA,"§8 table, p.16",TL Za 1,TLZa1,,"position 4, gathering",,exact,,
+I-PI-NA-MA,"§8 table, p.16",TL Za 1,TLZa1,,"position 5, presence",,exact,,
+SI-RU-TE,"§8 table, p.16",TL Za 1,TLZa1,,"position 6, sacred ministry",,exact,,
+A-TA-I-*301-WA-JA,"§8 table, p.16",KO Za 1,KOZa1,,"position 1, invocation",,exact,,
+TU-RU-SA,"§8 table, p.16",KO Za 1,KOZa1,,"position 2, deity/site",,exact,,
+DU-*314-RE,"§8 table, p.16",KO Za 1,KOZa1,,"position 2, deity/site (cont.)",,exact,,
+I-DA-A,"§8 table, p.16",KO Za 1,KOZa1,,"position 2, deity/site (cont.)",,exact,,
+U-NA-KA-NA-SI,"§8 table, p.16",KO Za 1,KOZa1,,"position 4, gathering",,exact,,
+I-PI-NA-MA,"§8 table, p.16",KO Za 1,KOZa1,,"position 5, presence",,exact,,
+SI-RU-TE,"§8 table, p.16",KO Za 1,KOZa1,,"position 6, sacred ministry",,exact,,
+A-TA-I-*301-WA-E,"§8 table, p.16",PK Za 11,PKZa11,,"position 1, invocation",,exact,,
+A-DI-KI-TE-TE,"§8 table, p.16",PK Za 11,PKZa11,,"position 2, deity/site",,exact,,
+SA-SA-RA-ME,"§8 table, p.16",PK Za 11,PKZa11,,"position 3, righteousness",,exact,,
+U-NA-RU-KA-NA-TI,"§8 table, p.16",PK Za 11,PKZa11,,"position 4, gathering",,exact,,
+I-PI-NA-MI-NA,"§8 table, p.16",PK Za 11,PKZa11,,"position 5, presence",,exact,,
+SI-RU,"§8 table, p.16",PK Za 11,PKZa11,,"position 6, sacred ministry",,exact,,
+A-TA-I-*301-WA-JA,"§8 table, p.16",SY Za 3,SYZa3,,"position 1, invocation",,exact,,
+SE-KA-NA-SI,"§8 table, p.16",SY Za 3,SYZa3,,"position 4, gathering",,exact,,
+SI-RU-TE,"§8 table, p.16",SY Za 3,SYZa3,,"position 6, sacred ministry",,exact,,
+TA-NA-I-NA-U-TI-NU,"§8, p.16",IO Za 6,IOZa6,tanainautīnū,may she answer for you,,"same word, different spelling",paper writes NA where the corpus writes *301,corpus has TA-NA-I-*301-U-TI-NU
+I-NA-TA,"§8, p.16",IO Za 6,IOZa6,ʿInat,"Anat, ""she who answers""",,different word breaks,,corpus writes it inside the longer word I-NA-TA-I-ZU-DI-SI-KA
+I-TH-DI-SI-KA,"§8, p.17",IO Za 6,IOZa6,I-Ṯadi Siqqa,the breast that gives drink,,different word breaks,"AB79: paper writes TH, corpus writes ZU",corpus writes it inside the longer word I-NA-TA-I-ZU-DI-SI-KA
+O-SU-QA-RE,"§8, p.17",TL Za 1,TLZa1,ʾO-Sukar,the Egyptian god Sokar,,exact,,
+TU-RU-SA,"§8, p.17",KO Za 1,KOZa1,(√t-r-s),"to shield, protect, fortify",,exact,,
+DU-*314-RE,"§8, p.17",KO Za 1,KOZa1,dū-ḥurre,the one of the noble/freeborn,,exact,,
+I-DA-A,"§8, p.17",KO Za 1,KOZa1,Ida + hē locale,toward Ida,,exact,,
+AU-SI-RE,"§8 n.29, p.17",PH(?) 31a,PH(?)31a,Ousire,Osiris,,exact,,
+MA-DI,"§8 n.29, p.17",PH(?) 31a,PH(?)31a,mōʿēd,appointed festival,,exact,,
+JE-DI,"§8 n.31, p.17",HT (4 attestations),,yedī,the Idaean,,no inscription given,,"paper cites ""HT (4 attestations)"" but gives no inscription id"
+A-SA-MU-NE,"§8, p.18",ZA Zb 3,ZAZb3,ʾAšmun,the god Eshmun,,exact,,
+A-TA-I-*301-DE-KA,"§8, p.18",ZA Zb 3,ZAZb3,ʾata-iʿnay-dēka,who answered for you,,exact,,
+SA-SA-RA-ME,"§8, p.18",PK Za 11,PKZa11,(yašāram without JA-),righteousness; initial JA dropped,,exact,,
+A-TA-NA,"§8, p.18",ZA 9,ZA9,(yatan-),She-who-gives,,exact,,
+DU-PU₂-RE,"§9, p.19",PK Za 11,PKZa11,dubur,sanctuary,,not found,,corpus has: A-TA-I-*301-WA-E 𐄁 A-DI-KI-TE-TE 𐄁 𐄁 RE 𐄁 PI-TE-RI 𐄁 A-KO-A-NE 𐄁 A SA-SA-RA-ME 𐄁 U-NA-RU-KA-NA-TI 𐄁
+DU-PU₂-RE,"§9, p.19",PK Za 12,PKZa12,dubur,sanctuary,,not found,,corpus has: A-TA-I-*301-WA-JA 𐄁 A-DI-KI-TE SI 𐄁 𐄁 RA-ME A-NE U-NA-RU-KA-JA-SI A-PA-DU-PA JA JA-PA-QA
+DU-PU₂-RE,"§9, p.19",PK Za 15,PKZa15,dubur,sanctuary,,different word breaks,,corpus writes it inside the longer word JA-DI-KI-TE-TE-DU-PU₂-RE
+A-DI-KI-TE-TE,"§9, p.19",PK Za 11,PKZa11,(Diqqiṯe),Dikte (in the Petsofas sequence),,exact,,
+*307,"§9, p.19",HT 27a,HT27a,dubur,sanctuary/debir (logographic),,exact,,
+TI-NI-TA,"§9, p.19",HT 27a,HT27a,Tinit,the Minoan serpent goddess,,exact,,
+SU-KI-RI-TE-I-JA,"§10 n.41, p.21",HT Zb 158b,HTZb158b,(Sybrita + gentilic),the Keretian,,exact,,
+A-DI-KI-TE-TE,"Appendix B, pp.36-40",PK Za 11,PKZa11,,Diktu,,exact,,
+A-DU-RE-ZA,"Appendix B, pp.36-40",KH 11,KH11,,,,not found,,corpus has: A-DU 𐄁 ZA CYP ¹⁄₁₆ SU 3 CYP+E 𐝇𐝉 VIN ≈ ¹⁄₆ *306 4 CYP ¹⁄₃ *348-CYP | paper states Davis mis-transcribed this; paper reads the tablet as A-DU | ZA
+A-DU-KU-MI-NA,"Appendix B, pp.36-40",ZA 10a,ZA10a,,,,exact,,
+A-JA,"Appendix B, pp.36-40",SYZa2,SYZa2,,"alive,",,exact,,
+A-KU-MI-NA,"Appendix B, pp.36-40",ZA 10a,ZA10a,,,,exact,,
+A-MI-DA-O,"Appendix B, pp.36-40",PH(?) 31b,PH(?)31b,,My kinsman(knows),,exact,,
+A-MI-DA-U,"Appendix B, pp.36-40",ZA 10a,ZA10a,,My kinsman knows,,exact,,
+A-NA-NU-SI-JA-SE,"Appendix B, pp.36-40",HTZb159,HTZb159,,ʿAnānu(’s)—whichgoesout,,exact,,
+A-NA-TI-*301-WA-JA,"Appendix B, pp.36-40",IO Za 8,IOZa8,,dwelling,,exact,,
+A-PA-RA-NE,"Appendix B, pp.36-40",HT 96a,HT96a,,"Hebrew,",,exact,,
+A-RA-TU,"Appendix B, pp.36-40",ZA7,ZA7a,,"earth,",,exact,,other cited inscription(s) -> ZA7b: not found
+A-RA-TU-ME,"Appendix B, pp.36-40",HTWc3024,HTWc3024,,earth,,exact,,
+A-RI-NI-TA,"Appendix B, pp.36-40",HT 25a,HT25a,,lion,,exact,,
+A-SA-SA-RA-ME,"Appendix B, pp.36-40","IOZb10 , PKZa11a–b",IOZb10,,beupright,,exact,,other cited inscription(s) -> PKZa11: different word breaks (corpus splits it as A + SA-SA-RA-ME (no word divider between them))
+A-SI-KI-RA,"Appendix B, pp.36-40",KH20,KH20,,strongdrink,,exact,,
+A-TA-I-*301-DE-KA,"Appendix B, pp.36-40",ZA Zb 3,ZAZb3,,who answered for you,,exact,,
+A-TA-I-*301-WA-E,"Appendix B, pp.36-40",PKZa11a,PKZa11,,dwell,,exact,,
+A-TA-I-*301-WA-JA,"Appendix B, pp.36-40",IO Za 2,IOZa2,,I make myself a dwelling,,exact,,
+A-TA-NA-TE,"Appendix B, pp.36-40",ZA 10a,ZA10a,,togive,,exact,,
+DA-I-PI-TA,"Appendix B, pp.36-40",ZA 10a,ZA10a,,,,exact,,
+DA-KU-SE-NE,"Appendix B, pp.36-40",HT 103,HT103,,tolove,,exact,,
+DA-KU-SE-NE-TI,"Appendix B, pp.36-40",HT104,HT104,,,,exact,,
+DA-MA-TE,"Appendix B, pp.36-40",KYZa2,KYZa2,,tower,,exact,,
+DU-RE-ZA-SE,"Appendix B, pp.36-40",ZA10a,ZA10a,,towardDureza,,exact,,
+I-DA-MA-TE,"Appendix B, pp.36-40",AR Zf 1–2,ARZf1,,the tower,,exact,,other cited inscription(s) -> ARZf2: exact
+I-KU-PA₃-NA-TU-NA-TE,"Appendix B, pp.36-40",APZa2,APZa2,,our,,exact,,
+I-NA-JA-PA-QA,"Appendix B, pp.36-40",PK Za 11d,PKZa11,,behold,,exact,,
+I-NA-JA-RE-TA,"Appendix B, pp.36-40",APZa2,APZa2,,inreverence,,exact,,
+I-PI-NA-MA,"Appendix B, pp.36-40",IOZa2,IOZa2,,presence/face,,exact,,
+I-PI-NA-MI-NA,"Appendix B, pp.36-40",PKZa10,PKZa10,,presence,,exact,,
+I-TI-TI-KU-NI,"Appendix B, pp.36-40",HT 96a,HT96a,,pour out,,exact,,
+I-ZU-RI-NI-TA,"Appendix B, pp.36-40",PH6,PH6,,bull,,exact,,
+JA-DI-KI-TE-TE,"Appendix B, pp.36-40",PK Za 15,PKZa15,,O Dikte!,,different word breaks,,corpus writes it inside the longer word JA-DI-KI-TE-TE-DU-PU₂-RE
+JA-DI-KI-TU,"Appendix B, pp.36-40",IO Za 2,IOZa2,,O Dikte!,,exact,,
+JA-SA-SA-RA-MA-NA,"Appendix B, pp.36-40",KN Za 10,KNZa10,,upright,,different word breaks,,corpus splits it as JA-SA-SA-RA-MA + NA (no word divider between them)
+JA-SA-SA-RA-ME,"Appendix B, pp.36-40",PS Za 2,PSZa2,,upright,,exact,,
+JA-SU-MA-TU,"Appendix B, pp.36-40",SYZa2a,SYZa2,,release,,different word breaks,,corpus writes it inside the longer word JA-SU-MA-TU-OLIV
+JA-TA-I-*301-U-JA,"Appendix B, pp.36-40",AP Za 1,APZa1,,,,exact,,
+KI-DA-RO,"Appendix B, pp.36-40",HT 117a,HT117a,,pot,,exact,,
+KI-TA-NA-SI-JA-SE,"Appendix B, pp.36-40",PE Zb 3,PEZb3,,linen,,different word breaks,,corpus writes it inside the longer word A-KA-RA-KI-TA-NA-SI-JA-SE-VIR+[?]-ZA
+KU-MI-NA-QE,"Appendix B, pp.36-40",HT Wc 3014a–b,HTWc3014,,cumin,,exact,,
+KU-PA₃-NA-TU,"Appendix B, pp.36-40",HT47a,HT47a,,,,exact,,
+KU-PA₃-NU,"Appendix B, pp.36-40",HT1,HT1,,,,exact,,
+MA-KA-I-SE,"Appendix B, pp.36-40",ZA8,ZA8,,customsofficial,,exact,,
+MA-KA-I-TA,"Appendix B, pp.36-40",ZA5b,ZA5b,,protection,,exact,,
+NA-MA-MA-TI-TI-*319,"Appendix B, pp.36-40",HT Zd 155,HTZd155,,Naamath,,"same word, different spelling","paper numbers the sign *319, corpus numbers it *904",corpus has NA-MA-MA-TI-TI-*904
+PA-JA-RE,"Appendix B, pp.36-40",ZA10b,ZA10b,,He-of-Re,,exact,,
+PA-RA-NE,"Appendix B, pp.36-40",HT 115a,HT115a,,,,exact,,
+RI-RU-MA,"Appendix B, pp.36-40",HT118,HT118,,pig,,exact,,
+RI-RU-MA-TI,"Appendix B, pp.36-40",PH(?) 31b,PH(?)31b,,no viable reading,,exact,,
+RU-MA-TA,"Appendix B, pp.36-40",HT29,HT29,,height,,exact,,
+RU-MA-TA-SE,"Appendix B, pp.36-40",ZA 20,ZA20,,,,exact,,
+SI-KI-RA,"Appendix B, pp.36-40",HT 8a,HT8a,,beer,,exact,,
+SU-KI-RI-TA,"Appendix B, pp.36-40",PH Wa 32,PHWa32,,,,exact,,
+SU-KI-RI-TE-I-JA,"Appendix B, pp.36-40",HTZb158,HTZb158b,,,,exact,,other cited inscription(s) -> HTZb158a: not found
+TA-NA-I-*301-TI,"Appendix B, pp.36-40",PSZa2,PSZa2,,answer,,exact,,
+TA-NA-I-*301-U-TI-NU,"Appendix B, pp.36-40",IOZa6,IOZa6,,answer,,exact,,
+TA-NA-TE,"Appendix B, pp.36-40",ZA10a,ZA10a,,,,exact,,
+TI-TI-KU,"Appendix B, pp.36-40",HT 35,HT35,,they disbursed,,exact,,
+U-NA-KA-NA-SI,"Appendix B, pp.36-40",KO Za 1c,KOZa1,,"behold, my assembly!",,exact,,
+U-NA-RU-KA-JA-SI,"Appendix B, pp.36-40",PKZa12c,PKZa12,,,,exact,,
+U-NA-RU-KA-NA-TI,"Appendix B, pp.36-40",PK Za 11b,PKZa11,,,,exact,,
+U-TA-I-SE,"Appendix B, pp.36-40",KH 7b,KH7b,,hefound,,exact,,
+WI-JA-SU-MA-TI-TI-*319,"Appendix B, pp.36-40",HTZd157+156,HTZd157+156,,re-lease,,different word breaks,"paper numbers the sign *319, corpus numbers it *904",corpus splits it as WI-JA-SU-MA-TI-TI + *904 (no word divider between them)
+ZU-RI-NI-MA,"Appendix B, pp.36-40",KNZb52,KNZb52,,bull,,exact,,
+*312-TA,"Appendix B, pp.36-40",HT 10b,HT10b,,"tunic, garment",,exact,,
+*312-TE-TE,"Appendix B, pp.36-40",HT26a,HT26a,,"tunic,clothitem",,exact,,

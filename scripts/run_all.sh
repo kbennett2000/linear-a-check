@@ -13,4 +13,12 @@ node    scripts/01_dump_corpus.js        | tee data/derived/out_01.txt
 ./venv/bin/python scripts/07_ab79_and_314.py       | tee data/derived/out_07.txt
 ./venv/bin/python scripts/08_vowels.py             | tee data/derived/out_08.txt
 ./venv/bin/python scripts/09_corpus_size.py        | tee data/derived/out_09.txt
+
+
+# --- cycle 2 ---
+./venv/bin/python scripts/10_parse_appendix_b.py  | tee data/derived/out_10.txt
+./venv/bin/python scripts/11_build_readings.py    | tee data/derived/out_11.txt
+./venv/bin/python scripts/12_check_readings.py    | tee data/derived/out_12.txt
+./venv/bin/python scripts/13_known_cases.py       | tee data/derived/out_13.txt
+./venv/bin/python scripts/14_counts.py            | tee data/derived/out_14.txt
 echo "done"

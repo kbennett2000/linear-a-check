@@ -5,6 +5,16 @@
 owner read, and re-count seven numbers the paper states. **No conclusions about
 the language are drawn in this cycle**, and none should be read into it.
 
+> **Correction — 17 September 2026 (cycle 2).** Section 1.3 previously said the
+> paper "contains a 508-entry lexicon as Appendix B, inside the PDF (pp. 36–40)".
+> That was wrong on both counts. The paper mentions a 508-entry lexicon once, at
+> the end of §9 (p. 20), and never prints it. Appendix B is a different thing: an
+> index of **67 Linear A sign-groups** drawn from Davis 2026 (p. 36 and footnote
+> 36 on p. 20). The bullet in 1.3 has been rewritten; nothing else in this report
+> has been changed. The error mattered because it wrongly implied the 508-entry
+> lexicon was already in hand, when in fact it remains unpublished as far as we
+> can see and is a live candidate for whatever the Zenodo record holds.
+
 A note on words used below. *Linear A* is the undeciphered writing system of
 Bronze Age Crete. A **syllabogram** is a sign standing for a whole syllable (KA,
 TI). A **logogram** is a sign standing for a whole word or commodity (VIN "wine",
@@ -93,8 +103,13 @@ them authoritative:
   file on it, a fetch of `https://www.minoanmystery.org/linear-a` returned the PDF
   and the DOI link and nothing else — "no spreadsheets, CSV files, word lists, code
   repositories, or GitHub links".
-- The paper itself contains a 508-entry lexicon as **Appendix B, inside the PDF**
-  (pp. 36–40), not as a separate data file.
+- The paper mentions a 508-entry lexicon at the end of §9 (p. 20) but **never
+  prints it**. What it does print, as **Appendix B inside the PDF** (pp. 36–40), is
+  an index of **67 Linear A sign-groups** taken from Davis 2026 — "the 66
+  sign-groups in Davis's appendix (2026, 58–60) and one word in his body" (p. 36),
+  described in footnote 36 (p. 20) as "a comprehensive appendix of 67 Linear A
+  sign-groups matching his own". So the 508-entry lexicon is not in the PDF and
+  would be a genuine candidate for a separate data deposit.
 
 **Status: unknown.** What would settle it: one successful fetch of
 `https://zenodo.org/api/records/22730321` from any machine that can reach Zenodo.
