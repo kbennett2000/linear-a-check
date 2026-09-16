@@ -16,7 +16,14 @@ re-count the numbers the paper states about the corpus.
 paper prints and check each word is in the inscription the paper cites. The table
 itself is [reports/cycle-02-readings.csv](reports/cycle-02-readings.csv).
 
-Neither cycle draws any conclusion about the language.
+**Cycle 3 ([reports/cycle-03.md](reports/cycle-03.md))** — write down the paper's
+own spelling rules, record the Semitic root it gives for each reading, and build a
+Hebrew word list to compare against later. The two tables are
+[reports/cycle-03-readings.csv](reports/cycle-03-readings.csv) (cycle 2's table
+plus `root`, `root_kind` and `languages`) and
+[reports/cycle-03-rules.csv](reports/cycle-03-rules.csv) (66 rules).
+
+No cycle so far draws any conclusion about the language.
 
 ## Credit
 
@@ -29,6 +36,11 @@ reused under that licence.
 
 The corpus is the Linear A Explorer data (Hogan 2019–),
 [mwenge/lineara.xyz](https://github.com/mwenge/lineara.xyz).
+
+The Hebrew word list used from cycle 3 on is built from Strong's Hebrew dictionary
+(James Strong, 1894, public domain), JSON edition by
+[Open Scriptures](https://github.com/openscriptures/strongs), released under
+CC BY-SA. The derived list is not committed.
 
 ## Layout
 

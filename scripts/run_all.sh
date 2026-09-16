@@ -21,4 +21,14 @@ node    scripts/01_dump_corpus.js        | tee data/derived/out_01.txt
 ./venv/bin/python scripts/12_check_readings.py    | tee data/derived/out_12.txt
 ./venv/bin/python scripts/13_known_cases.py       | tee data/derived/out_13.txt
 ./venv/bin/python scripts/14_counts.py            | tee data/derived/out_14.txt
+
+# --- cycle 3 ---
+# Part C needs a third download: data/raw/strongs-hebrew-dictionary.js
+# (see reports/cycle-03.md for the URL and hash).
+./venv/bin/python scripts/15_add_roots.py         | tee data/derived/out_15.txt
+./venv/bin/python scripts/16_build_rules.py       | tee data/derived/out_16.txt
+./venv/bin/python scripts/17_check_quotes.py      | tee data/derived/out_17.txt
+node    scripts/18_dump_hebrew.js                 | tee data/derived/out_18.txt
+./venv/bin/python scripts/19_build_hebrew_list.py | tee data/derived/out_19.txt
+./venv/bin/python scripts/20_root_coverage.py     | tee data/derived/out_20.txt
 echo "done"

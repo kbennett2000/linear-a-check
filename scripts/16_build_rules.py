@@ -1,0 +1,516 @@
+#!/usr/bin/env python3
+"""Cycle 3, Part B.  Build reports/cycle-03-rules.csv.
+
+Every rule the paper states, or relies on without stating, for turning Linear A
+signs into Semitic sounds and words.  Hand-transcribed from the whole paper:
+main text, footnotes, the section 7 and section 8 tables, and Appendices A, B
+and C.
+
+Columns
+  rule_id          R01, R02, ...
+  kind             sound | sign value | spelling habit | prefix or suffix |
+                   word breaks | other
+  rule             plain English
+  allows           the same thing in a form code can use next cycle
+  stated_or_used   "stated" if the paper states it as a general rule,
+                   "used"   if it only shows up inside particular readings
+  where            section / footnote / appendix and page
+  quote            the paper's own words, 25 words or fewer
+  examples         words that use the rule, with pages
+
+A note on the quotes.  The PDF's text layer drops most spaces between words
+(see reports/cycle-01.md).  Quotes below restore the spaces and nothing else;
+the letters, punctuation and order are the paper's.  scripts/17_check_quotes.py
+checks every quote against the extracted text with all spaces removed.
+"""
+import csv, os
+
+HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DST = os.path.join(HERE, 'reports', 'cycle-03-rules.csv')
+
+R = []
+
+
+def rule(kind, text, allows, sou, where, quote, examples):
+    R.append(dict(rule_id='R%02d' % (len(R) + 1), kind=kind, rule=text,
+                  allows=allows, stated_or_used=sou, where=where,
+                  quote=quote, examples=examples))
+
+
+# ---------------------------------------------------------------- foundation
+rule('other',
+     'Linear A signs are read with the sound values of the Linear B signs that look like them.',
+     'value(Linear A sign) = value(Linear B homomorph)',
+     'stated', '§3, pp.3-4; Appendix B opening paragraph, p.36',
+     'scholars stretching back to Ventris have long assumed that Linear B sound values could be applied to their Linear A counterparts',
+     'every reading in the paper; Appendix B says its signs are "transliterated using Linear B homomorph values" (p.36)')
+
+rule('spelling habit',
+     'Every sign writes an open syllable: a consonant plus a vowel, or a vowel on its own. The script cannot write a bare consonant.',
+     'sign = CV or V; never C alone',
+     'stated', '§9, p.19',
+     'As each sign in Linear A is an open syllable, it imposes systematic distortions on Semitic phonology.',
+     'every reading in the paper')
+
+rule('other',
+     'Two different signs can stand for the same sound.',
+     'value(sign A) may equal value(sign B)',
+     'stated', '§4.1, p.5',
+     'it is indeed possible to encounter two signs that represent the same phonetic value',
+     '*301 and NA both = /na/ (p.5)')
+
+rule('other',
+     'One sign can be syllabic in one place and a whole word (a logogram) in another.',
+     'sign = syllable value OR whole-word value',
+     'stated', '§4.1 and n.8, p.5',
+     'Signs functioning both syllabically and logographically are not uncommon across ancient scripts.',
+     '*301 = /na/ in the formula but stands alone for nawā elsewhere (p.5); *307 = dubur (p.19); *312 = KITNU (p.40)')
+
+# ---------------------------------------------------------------- sound: the four p.19 rules
+rule('sound',
+     'Stops are not told apart as voiced, voiceless or emphatic, so one stop sign covers all the stops made in the same part of the mouth.',
+     'stop sign = any stop at that place: P-series = p | b; T-series = t | d | ṭ; K-series = k | g | q',
+     'stated', '§9, p.19',
+     'Stops cannot be distinguished as voiced, voiceless, or emphatic',
+     'A-KA-NU = ʾagānu, KA writes /ga/ (p.36); A-PA-RA-NE = ʿibrānī, PA writes /ba/ (p.37); O-SU-QA-RE = ʾO-Sukar, QA writes /ka/ (p.17)')
+
+rule('sound',
+     'All the s-type sounds share one series of signs.',
+     'S-series sign = š | s | ṣ | ś',
+     'stated', '§9, p.19; §4.3, p.8',
+     'all sibilants merge into a single S-series',
+     'SI-RU-TE = šīrūt, SI writes /ši/ (p.11); U-NA-KA-NA-SI = kanasī, SI writes /si/ (p.9); *301-SI = nāśī, SI writes /śī/ (n.10, p.5)')
+
+rule('sound',
+     'Throat sounds (laryngeals and pharyngeals) are often not written at all, or are written with a plain vowel sign.',
+     'vowel sign V = V | ʾV | ʿV | hV | ḥV; a throat consonant may also be left out entirely',
+     'stated', '§9, p.19',
+     "laryngeals are not (always) even written, but represented by a “pure vowel” sign",
+     'A-KA-NU = ʾagānu (p.36); A-NA-NE = ḥanān (p.36); U-NA = hunna (p.9); O-SU-QA-RE = ʾO-Sukar (p.17)')
+
+rule('sound',
+     'Length is never written: neither a doubled consonant nor a long vowel is shown by the spelling.',
+     'a written sequence may be read with any consonant or vowel length',
+     'stated', '§9, p.19',
+     'neither consonantal nor vocalic length is ever indicated orthographically',
+     'JA-DI-KI-TU = Diqqitu with /qq/ from one KI (pp.6-7); SI-RU-TE = šīrūt with two long vowels (p.11)')
+
+rule('sound',
+     'Linear A does not tell /l/ apart from /r/; one series writes both.',
+     'R-series sign = r | l',
+     'stated', 'Appendix C, p.40',
+     'the liquid merger of /l/ and /r/—which the Linear A syllabary collapses',
+     'RU = lū (p.9); RA-KI-NI-SE = la-kinnisēt (p.9); SI-RU-TE = šīrūt, RU writes /rū/ (p.11)')
+
+rule('sound',
+     'Linear A writes a vowel on every syllable, and those vowels carry grammar (case endings, stem vowels, mimation).',
+     'every sign contributes a vowel; vowel quality is meaningful, vowel length is not written',
+     'stated', '§9, p.19',
+     'Linear A is the only pre-Classical Semitic script that renders full vocalization on every syllable.',
+     'the -u of *yaqtulu in TA-NA-RA-TE-U-TI-NU (p.12); the -ī possessive in U-NA-KA-NA-SI (p.9)')
+
+# ---------------------------------------------------------------- sound: per-series values actually used
+rule('sound',
+     'The T-series also writes the emphatic ṣ, and (doubled) the interdental ṯ, on top of plain t and ṭ.',
+     'T-series sign = t | ṭ | ṣ | ṯ (and d by the general stop rule R05)',
+     'stated', '§6.1, p.12 (for ṣ); Appendix B, pp.36-40 (for ṯ)',
+     'I propose that Linear A represents emphatic ṣade through its T-series',
+     'TA-NA-RA-TE-U-TI-NU = tana-raṣē-ū-tī-nū (p.12); A-RE-TU-MI = *ʾarṣ-ummī (p.12); A-RA-TU = ʾarṣ (p.37); JA-SU-MA-TU = šāmaṭ (p.38)')
+
+rule('sound',
+     'The D-series writes /d/ in every reading the paper gives.',
+     'D-series sign = d (and t, ṭ by the general stop rule R05)',
+     'used', '§4.2, p.6; §9, p.19; Appendix B, pp.36-40',
+     '/di/ Root C₁ of √d-q-q',
+     'JA-DI-KI-TU (p.6); DU-RA-RE = durar (p.36); DU-PU₂-RE = dubur (p.19); DA-MA-TE = dmt (p.38)')
+
+rule('sound',
+     'The K-series writes /k/, /g/, /q/ and /ḫ/.',
+     'K-series sign = k | g | q | ḫ',
+     'used', '§4.2, pp.6-7; Appendix A, p.36; §10 n.41, p.21',
+     'Cf. Heb. yā Diqtu “O Dikte!” (vocative; toponym Dikte/√d-q-q)',
+     'U-NA-KA-NA-SI = kanasī, /k/ (p.9); A-KA-NU = ʾagānu, /g/ (p.36); JA-DI-KI-TU = Diqqitu, /q/ (p.6); A-KA-WI-JA = ʾa-ḫa-wi-ya, /ḫ/ (n.41, p.21)')
+
+rule('sound',
+     'The Q-series writes /q/ and also /k/.',
+     'Q-series sign = q | k',
+     'used', '§4.3 n.13, p.8; §8, p.17; Appendix B, p.38',
+     'At Troullos, this is O-SU-QA-RE, vocalized as O-Sukar, with a prosthetic aleph.',
+     'QA-QA-RU = qaqqaru (n.13, p.8); I-NA-JA-PA-QA = pāqaḥ (p.38); O-SU-QA-RE = Sukar, QA writes /ka/ (p.17)')
+
+rule('sound',
+     'The P-series writes /p/ and /b/. PU₂ in particular writes /bu/.',
+     'P-series sign = p | b',
+     'used', '§9, p.19; Appendix B, p.37',
+     'The nearest analog to DU-PU₂-RE, or DU-BU-RE, as Davis correctly renders it',
+     'I-PI-NA-MA = ʾipinama, /p/ (p.10); DU-PU₂-RE = dubur, /b/ (p.19); A-PA-RA-NE = ʿibrānī, /b/ (p.37)')
+
+rule('sound',
+     'The Z-series writes the voiced interdental ḏ and the voiceless interdental ṯ.',
+     'Z-series sign = ḏ | ṯ',
+     'used', 'Appendix A, p.36; Appendix B, p.40',
+     'ZA-TI ḏāti “of”',
+     'ZA-TI = ḏāti (p.36); ZU-RI-NI-MA from √ṯ-w-r (p.40); I-ZU-RI-NI-TA from √ṯ-w-r (p.38)')
+
+# ---------------------------------------------------------------- spelling habits
+rule('spelling habit',
+     'A doubled sign can mark a doubled (geminate) consonant.',
+     'X-X may be read as a single consonant of X, doubled',
+     'stated', '§4.3 n.13, p.8',
+     'Elsewhere in the corpus, doubled signs may represent geminate consonants: QA-QA-RU is compatible with qaqqaru “ground”',
+     'QA-QA-RU = qaqqaru (n.13, p.8); SA-SA as a possible /šš/ (n.13, p.8)')
+
+rule('spelling habit',
+     'A doubled SA can mark the sound š (shin) rather than a doubled consonant.',
+     'SA-SA = š',
+     'stated', '§4.3, p.8',
+     'Because the S-series must neutralize all three sibilants (š, s, ṣ), the doubling of SA-SA may signal the phoneme /š/ (shin)',
+     'JA-SA-SA-RA-ME = yašāram (p.8); A-SA-SA-RA-ME (p.37); SA-SA-RA-ME (p.16)')
+
+rule('spelling habit',
+     'A doubled TE or TI writes the interdental ṯ, the same way a doubled SA writes š.',
+     'TE-TE = ṯ; TI-TI = ṯ',
+     'stated', 'Appendix B, pp.36, 38, 39, 40',
+     '-TE-TE writes interdental /ṯ/ by doubling convention (cf. SA-SA = /š/)',
+     'A-DI-KI-TE-TE (p.36); JA-DI-KI-TE-TE (p.38); NA-MA-MA-TI-TI-*319 (p.39); WI-JA-SU-MA-TI-TI-*319 (p.40); *312-TE-TE (p.40)')
+
+rule('spelling habit',
+     'The vowel of a final sign can be "dead", that is, written but not pronounced.',
+     'the vowel of a word-final sign may be dropped in the reading',
+     'stated', 'n.23, p.15; Appendix B, p.38',
+     'Variant of A-TA-NA (ZA 9) with feminine -at- written -TE (final vowel dead; √y-t-n “to give”)',
+     'AB79 and its inherent /u/ (n.23, p.15); A-TA-NA-TE = yatanat (p.38); SI-RU-TE = šīrūt (p.11)')
+
+rule('spelling habit',
+     'A pharyngeal ḥ can be dropped from the spelling altogether.',
+     'ḥ in the Semitic word may have no sign in the Linear A spelling',
+     'stated', 'Appendix B, p.38',
+     'pāqaḥ “open (eyes)” (Isa 42:7); ḥ drops (√ʾ-n-n + √p-q-ḥ)',
+     'I-NA-JA-PA-QA = ʾinna + pāqaḥ (p.38)')
+
+rule('spelling habit',
+     'A syllable-final /s/ is left unwritten before a stop, following the Linear B rule.',
+     'coda s before a stop may have no sign',
+     'stated', 'Appendix B, p.40',
+     'coda /s/ unwritten, per the Linear B rule that drops syllable-final s before a stop',
+     'U-NA-RU-KA-NA-TI = hunna lu kanasiti (p.40)')
+
+rule('spelling habit',
+     'Linear A cannot write /hu/, so U-NA is used as the nearest spelling of hunna.',
+     'U-NA = hunna (h is not written)',
+     'stated', '§5.1, p.9',
+     'As Linear A has no definite article and cannot render /hu/, U-NA is the closest syllabic approximation to the presentative hunna.',
+     'U-NA-KA-NA-SI (p.9); U-NA-RU-KA-NA-SI (p.9); U-NA-RU-KA-NA-TI (p.40)')
+
+rule('spelling habit',
+     'A pre-consonantal /r/ is dropped. The paper states this for the Linear B spelling of a name it compares, not for Linear A itself.',
+     'r before a consonant may have no sign (stated for Linear B)',
+     'used', 'n.18, p.12',
+     'Linear B a-te-mi-to (PY Es 650, genitive) drops the pre-consonantal /r/ per orthographic convention.',
+     'A-RE-TU-MI = *ʾarṣ-ummī compared with Linear B a-te-mi-to (n.18, p.12)')
+
+# ---------------------------------------------------------------- sign values
+rule('sign value', '*301 is a second sign for /na/, beside the ordinary NA (AB06).',
+     '*301 = na', 'stated', '§4.1, p.5',
+     '*301 is an allograph of NA: a second sign writing /na/, but one that carries symbolic and semantic weight.',
+     'A-TA-I-*301-WA-JA (p.4); TA-NA-I-*301-U-TI-NU (p.16); A-TA-I-*301-DE-KA (p.18)')
+
+rule('sign value', '*301 standing on its own is a whole word, most likely nawā "dwelling, temple".',
+     '*301 alone = nawā', 'stated', '§4.1, p.5',
+     '*301 stands alone as a logographic abbreviation, plausibly for nawā “dwelling, temple” itself',
+     '238 of its 291 attestations, mostly Hagia Triada roundels (p.5)')
+
+rule('sign value',
+     'AB79, which the paper transliterates TH or *79, is the only sign for the interdental ṯ, and carries no fixed vowel.',
+     'AB79 = ṯ + any vowel',
+     'stated', 'n.23, p.15; Appendix A, p.36',
+     'A rare and enigmatic sign, AB79 (𐙀) represents the only dedicated symbol for the voiceless interdental fricative /ṯ/ in Linear A.',
+     'A-*79-RA = ʾAṯirat (p.36); *79-DU = ṯudu (p.36); MA-*79 = maṯu (p.36); I-*79-DI-SI-KA = I-Ṯadi Siqqa (p.17)')
+
+rule('sign value',
+     'Scribes usually wrote the ṯ sound with the T-series instead of with AB79.',
+     'a T-series sign may be preferred over AB79 for ṯ',
+     'stated', 'n.23, p.15',
+     'Given that AB79 appears in only 25 word-forms across Linear A, scribal convention clearly favored its sublimation into the T-series.',
+     'A-DI-KI-TE-TE beside A-*79-RA (pp.36, 15); the TE-TE and TI-TI spellings of Appendix B')
+
+rule('sign value', '*314 writes the pharyngeal ḥ.',
+     '*314 = ḥ', 'stated', 'n.30, p.17',
+     '*314 𐙦, here read as the pharyngeal ḥ absent from Linear B, is attested six times in the Linear A corpus',
+     'DU-*314-RE = dū-ḥurre (pp.16-17)')
+
+rule('sign value', 'AB85 writes two vowels at once, a diphthong, which the paper reads AU.',
+     'AB85 = au (a two-vowel sign)', 'stated', 'n.29, p.17',
+     'AB85 bucks the syllabogram trend as a VV diphthong, in the same vein as Linear B a₃ /AI/',
+     'AB85-SI-RE or AU-SI-RE = Ousire (n.29, p.17)')
+
+rule('sign value', '*307 is a whole word standing for Semitic dubur, "sanctuary".',
+     '*307 = dubur', 'stated', '§9, p.19',
+     'I resolved that *307, much like *301, functioned logographically, specifically for Semitic dubur',
+     '*307 as a header on Hagia Triada tablets, and after TI-NI-TA on HT 27a (p.19)')
+
+rule('sign value', '*319 may write /hū/, the 3ms possessive. The paper puts this forward conditionally.',
+     '*319 = hū (conditional)', 'used', 'Appendix B, pp.39-40',
+     'If *319 = /hū/: naʿmāṯ-hū “his pleasant one” (fem. + 3ms possessive)',
+     'NA-MA-MA-TI-TI-*319 (p.39); WI-JA-SU-MA-TI-TI-*319 (p.40)')
+
+rule('sign value', '*312 is the logogram KITNU, a linen or cloth item.',
+     '*312 = KITNU (logogram)', 'used', 'Appendix B, p.40',
+     'Cf. *312 = KITNU (logogram)',
+     '*312-TA (p.40); *312-TE-TE (p.40)')
+
+rule('sign value', 'RU can write the precative particle lū, "may, let".',
+     'RU = lū', 'stated', '§5.1, p.9',
+     'U-NA-RU-KA-NA-SI (IO Za 16) inserts RU = lū (the precative particle “may, let”',
+     'U-NA-RU-KA-NA-SI (p.9); U-NA-RU-KA-NA-TI (p.40); U-NA-RU-KA-JA-SI (p.40)')
+
+rule('sign value', 'DU can write dū, a possessive element, "the one of".',
+     'DU = dū "the one of"', 'stated', '§8, p.17',
+     'du acts as a possessive element',
+     'DU-*314-RE = dū-ḥurre (p.17)')
+
+rule('sign value',
+     'The sign the paper writes I at the end of IO Za 2 is the sign CH008, "hand", and is left untranslated.',
+     'final I in IO Za 2 = CH008 "hand" (no reading offered)',
+     'used', '§7 table and n.20, p.14',
+     'GORILA transcribes the last legible sign on IO Za 2 as AB28 (I), though the head-shaped form may be a distinct sign',
+     'IO Za 2, position 8 (p.14)')
+
+# ---------------------------------------------------------------- prefixes and suffixes
+rule('prefix or suffix',
+     'A- at the start of a word. Three jobs: the 1cs verb prefix "I"; a prosthetic vowel that adds nothing; and the Palaikastro replacement for ya-.',
+     'A- = 1cs prefix ʾa- | prosthetic ʾa- | ʾa- replacing ya-',
+     'stated', '§4.1, pp.4-5; Appendix B, pp.37 (A-SI-KI-RA, A-SA-SA-RA-ME)',
+     'The opening A- is a first-person prefix common to all Semitic languages, followed by a tG stem morpheme (-TA-)',
+     'A-TA-I-*301-WA-JA (p.4); A-SI-KI-RA = šēkār + prosthetic A- (p.37); A-SA-SA-RA-ME for JA-SA-SA-RA-ME (p.37)')
+
+rule('prefix or suffix',
+     'JA- at the start of a word. Three jobs: the vocative particle "O!"; the 3ms verb prefix ya-; and the first root consonant /y/.',
+     'JA- = vocative yā | 3ms prefix ya- | root consonant y',
+     'stated', '§4.2, p.6; §4.3, p.7; Appendix B, p.39',
+     'Heading this position, JA or ya functions as a vocative particle',
+     'JA-DI-KI-TU = yā Diqqitu (p.6); JA-TA-I-*301-U-JA, 3ms prefix (p.39); JA-SA-SA-RA-ME, root C₁ of √y-š-r (p.7)')
+
+rule('prefix or suffix',
+     'TA- inside or at the start of a verb. Two jobs: the tG middle-reflexive stem marker, vocalised -ta-; and the 3fs prefix "may she".',
+     'TA- = tG stem marker -ta- | 3fs prefix ta-',
+     'stated', '§4.1, pp.4-5 and n.7; §6.1, p.12',
+     'The TA- morpheme designates this as a 3fs verb, in contrast to the 1cs A-TA-I-*301-WA-JA which initiated the prayer.',
+     'A-TA-I-*301-WA-JA, tG (p.4); TA-NA-RA-TE-U-TI-NU, 3fs (p.12)')
+
+rule('prefix or suffix',
+     'TA-NA- at the start of a verb: the 3fs prefix followed by the N-stem (nipʿal) marker, which survives before /r/.',
+     'TA-NA- = 3fs ta- + N-stem na-',
+     'stated', '§6.1, p.12; Appendix B, pp.39-40',
+     'The NA- that follows represents the N-stem (nipʿal) morpheme, preserved before /r/ where later Hebrew assimilates it',
+     'TA-NA-RA-TE-U-TI-NU (p.12); TA-NA-I-*301-U-TI-NU (p.40); TA-NA-I-*301-TI (p.39)')
+
+rule('prefix or suffix',
+     'I- . Three jobs: an invariant stem vowel inside the opening verb; the preposition "in"; and a prothetic vowel or locative at the start of a word.',
+     'I- = stem vowel i | preposition ʾi- "in" | prothetic i- | locative i-',
+     'stated', '§4.1 n.7, p.5; §5.2, p.10; Appendix B, pp.38 (I-DA-MA-TE, I-KU-PA₃-NA-TU-NA-TE)',
+     'Prothetic I- before DA-MA-TE (“the tower”; cf. KY Za 2)',
+     'A-TA-I-*301-WA-JA, stem vowel (p.5); I-PI-NA-MA = "in the presence of" (p.10); I-DA-MA-TE (p.38)')
+
+rule('prefix or suffix',
+     'U-NA- at the start of a word: the presentative particle hunna, "behold!".',
+     'U-NA- = hunna "behold"',
+     'stated', '§5.1, p.9',
+     'U-NA is the closest syllabic approximation to the presentative hunna',
+     'U-NA-KA-NA-SI (p.9); U-NA-RU-KA-NA-SI (p.9); U-NA-RU-KA-NA-TI (p.40)')
+
+rule('prefix or suffix',
+     'WI- at the start of a word: the conjunction wa-, "and", carrying its own vowel.',
+     'WI- = wa- "and"',
+     'used', 'Appendix A, p.36',
+     'WI-PI wīpī “and my mouth”',
+     'WI-PI (p.36)')
+
+rule('prefix or suffix',
+     'RA- at the start of a word: the preposition la-, "for".',
+     'RA- = la- "for"',
+     'stated', '§5.1, p.9',
+     'At Syme (SY Zb 7), we find a short inscription that reads RA-KI-NI-SE, or la-kinnisēt: “for the assembly.”',
+     'RA-KI-NI-SE = la-kinnisēt (p.9)')
+
+rule('prefix or suffix',
+     'O- at the start of a word: a prosthetic vowel (the paper calls it a prosthetic aleph).',
+     'O- = prosthetic ʾo-',
+     'stated', '§8, p.17',
+     'At Troullos, this is O-SU-QA-RE, vocalized as O-Sukar, with a prosthetic aleph.',
+     'O-SU-QA-RE = ʾO-Sukar (p.17)')
+
+rule('prefix or suffix',
+     'DU- at the start of a word: the possessive element dū, "the one of".',
+     'DU- = dū "the one of"',
+     'stated', '§8, p.17',
+     'du acts as a possessive element',
+     'DU-*314-RE = dū-ḥurre (p.17)')
+
+rule('prefix or suffix',
+     '-ME and -MA at the end of a word: mimation, the case ending -am (accusative after ME, oblique after MA).',
+     '-ME = -am (accusative); -MA = -am (oblique); both also written as plain "+ mimation"',
+     'stated', '§4.3, pp.7-8; §5.2, p.10; Appendix B, pp.37, 39, 40',
+     'My reading differs, seeing in ME the Semitic phenomenon of accusative mimation -am: yašāram',
+     'JA-SA-SA-RA-ME (p.8); I-PI-NA-MA (p.10); A-RA-TU-ME (p.37); RI-RU-MA (p.39); ZU-RI-NI-MA (p.40)')
+
+rule('prefix or suffix',
+     '-JA at the end of a word. Two jobs: the third root consonant /y/; and the gentilic ending that makes a "person of" word.',
+     '-JA = root consonant y | gentilic -ya',
+     'stated', '§4.1, p.5; n.41, p.21',
+     '-JA functions as the gentilic suffix visible on SU-KI-RI-TE-I-JA “the Keretian” (HT Zb 158b, Hagia Triada)',
+     'A-TA-I-*301-WA-JA, root C₃ (p.5); SU-KI-RI-TE-I-JA, gentilic (p.21)')
+
+rule('prefix or suffix',
+     '-TI at the end of a word. Two jobs: the 2nd person object pronoun from the old *-t- series; and a 2fs subject marker on an N-stem verb.',
+     '-TI = 2nd person object -tī | 2fs marker -ti',
+     'stated', '§6.1, p.13; Appendix B, p.39',
+     'the suffix -TI represents the 2nd person object pronoun from the archaic *-t- series',
+     'TA-NA-RA-TE-U-TI-NU (p.13); TA-NA-I-*301-TI (p.39); TA-NA-I-*301-U-TI-NU (p.40)')
+
+rule('prefix or suffix',
+     '-NU at the end of a word: the energic nun, an emphatic verb ending, with a vowel after it.',
+     '-NU = energic -nū',
+     'stated', '§6.1, p.13; Appendix B, p.40',
+     'The final NU functions, potentially, as an energic -n',
+     'TA-NA-RA-TE-U-TI-NU (p.13); TA-NA-I-*301-U-TI-NU (p.40); TA-NA-I-NA-U-TI-NU (p.16)')
+
+rule('prefix or suffix',
+     '-NI at the end of a word: the energic ending in its -ni form.',
+     '-NI = energic -ni',
+     'used', 'Appendix B, p.38',
+     'Cf. Ug. √ntk “pour out” + energic -ni (cf. Amarna -ni, Heb. paragogic nun Job 19:2)',
+     'I-TI-TI-KU-NI (p.38)')
+
+rule('prefix or suffix',
+     '-TE at the end of a word. Three jobs: the third root consonant; the noun ending -ūt; and a feminine -at with its final vowel dead. A locative -te also appears.',
+     '-TE = root consonant | -ūt | feminine -at | locative -te',
+     'stated', '§5.3, p.11; Appendix B, p.38',
+     'As a verbal noun, √š-r-t (“to minister, serve in a sacred capacity”) produces šīrūt, the cultic act itself.',
+     'SI-RU-TE = šīrūt (p.11); A-TA-NA-TE = feminine of A-TA-NA (p.38); I-KU-PA₃-NA-TU-NA-TE, locative (p.38)')
+
+rule('prefix or suffix',
+     '-NA. Two jobs at the end of a word: the possessive "our"; and a plural ending after a long vowel. Inside a word it is usually a root consonant or the N-stem marker.',
+     '-NA = -na "our" | plural -na | root consonant n | N-stem marker',
+     'used', 'Appendix B, p.38 (I-KU-PA₃-NA-TU-NA-TE, I-PI-NA-MI-NA)',
+     'either Sem. -na “our” + enclitic locative -te, or Hurr. =na (pl. article) + =ta/te (directive)',
+     'I-KU-PA₃-NA-TU-NA-TE (p.38); I-PI-NA-MI-NA, final -NA as a plural ending (p.38)')
+
+rule('prefix or suffix',
+     '-KA at the end of a word: the 2ms pronoun -kā, "you".',
+     '-KA = 2ms -kā',
+     'used', 'Appendix B, p.37',
+     '-DE-KA = dī-kā “for you” (relative dī + 2ms -kā)',
+     'A-TA-I-*301-DE-KA (p.37; also p.18)')
+
+rule('prefix or suffix',
+     '-DE-KA at the end of a word: the relative dī plus the 2ms pronoun -kā, together "for you".',
+     '-DE-KA = dī-kā "for you"',
+     'used', 'Appendix B, p.37; §8, p.18',
+     'here read as ʾata-iʿnay-dēka, “who answered for you,” a variant of the formula’s usual opening term',
+     'A-TA-I-*301-DE-KA (pp.18, 37)')
+
+rule('prefix or suffix',
+     '-SE at the end of a word. Three jobs the paper gives it: a gentilic; part of the vessel-label ending -SI-JA-SE; and a Proto-Semitic terminative "toward".',
+     '-SE = gentilic -se | part of -SI-JA-SE | terminative -sa "toward"',
+     'used', 'Appendix B, pp.37, 38, 39',
+     'rāmāh + gentilic -SE (√r-w-m)',
+     'RU-MA-TA-SE (p.39); A-NA-NU-SI-JA-SE and KI-TA-NA-SI-JA-SE (pp.37, 38); DU-RE-ZA-SE (p.38); MA-KA-I-SE (p.39); U-TA-I-SE (p.40)')
+
+rule('prefix or suffix',
+     '-A at the end of a word: the directive ending that marks "toward", the Semitic hē locale.',
+     '-A = directive -āh "toward"',
+     'stated', 'n.30, p.17',
+     'I-DA-A writes the bare toponym Ida, paired with a final directive suffix (the Semitic hē locale, Hebrew -āh), marking destination',
+     'I-DA-A = "toward Ida" (p.17)')
+
+rule('prefix or suffix',
+     '-I at the end of a word: the 1cs possessive "my".',
+     '-I = 1cs -ī "my"',
+     'stated', '§5.1, p.9',
+     'When parsed as a vocalized vowel, the -ī suffix denotes the 1cs possessive, consistent with the 1cs A- prefix at Position 1.',
+     'U-NA-KA-NA-SI = kanasī "my assembly" (p.9); WI-PI = wīpī "and my mouth" (p.36)')
+
+rule('prefix or suffix',
+     '-NI-TA at the end of a word: the feminine ending -nīt, whose masculine counterpart is -NI-MA.',
+     '-NI-TA = feminine -nīt; -NI-MA = masculine + mimation',
+     'used', 'Appendix B, pp.37, 38, 40',
+     'PN paradigm with I-ZU-RI-NI-TA: “She-of-the-Lion” (√ʾ-r-y + -nīt)',
+     'A-RI-NI-TA (p.37); I-ZU-RI-NI-TA (p.38); ZU-RI-NI-MA (p.40); *79-RI-NI-MA (p.36)')
+
+rule('prefix or suffix',
+     '-TE-I-JA at the end of a word: a gentilic adjective built on a place name.',
+     '-TE-I-JA = gentilic adjective',
+     'used', 'Appendix B, p.39; n.41, p.21',
+     'Cf. SU-KI-RI-TA + gentilic adjective -TE-I-JA (toponym + gentilic)',
+     'SU-KI-RI-TE-I-JA (pp.21, 39)')
+
+rule('prefix or suffix',
+     'U inside a verb: the indicative vowel *-u of the Proto-Semitic *yaqtulu conjugation.',
+     'U inside a verb = indicative -u-',
+     'stated', '§6.1, pp.12-13',
+     'the U vowel occupies precisely the slot where Proto-Semitic places the indicative *-u of the *yaqtulu conjugation',
+     'TA-NA-RA-TE-U-TI-NU (p.12); TA-NA-I-*301-U-TI-NU (p.40)')
+
+# ---------------------------------------------------------------- dialect / regional
+rule('other',
+     'At Palaikastro an initial JA- is dropped from the front of a word.',
+     'Palaikastro spelling = standard spelling with initial JA- removed',
+     'stated', '§8, p.18',
+     'The initial JA is consistently dropped: SA-SA-RA-ME for JA-SA-SA-RA-ME, -WA-E for -WA-JA, A-DI-KI-TE-TE for JA-DI-KI-TU.',
+     'SA-SA-RA-ME (p.18); A-DI-KI-TE-TE (p.18); A-TA-I-*301-WA-E (p.18)')
+
+rule('other',
+     'The same weakening of the y sound may also apply at Zakros, so a word written A-TA-NA would be JA-TA-NA in the standard spelling.',
+     'Zakros spelling may drop an initial JA- as Palaikastro does',
+     'stated', '§8, p.18',
+     'As a dialectal feature, this weakening of yod may extend to the eastern shore of Zakros',
+     'A-TA-NA (ZA 9) for JA-TA-NA (p.18)')
+
+rule('other',
+     'A final -WA-JA can appear as -WA-E, which the paper compares to the Phoenician change bayt > bēt.',
+     '-WA-JA may be written -WA-E',
+     'stated', 'n.46, p.22; §8, p.18',
+     'the sound changes that distinguish Phoenician from Hebrew can be gleaned as early as the Middle Minoan, e.g. WA-JA→WA-E',
+     'A-TA-I-*301-WA-E at PK Za 11a (pp.18, 37)')
+
+# ---------------------------------------------------------------- word breaks
+rule('word breaks',
+     'The paper sometimes divides a run of signs into words differently from the corpus. Cycle 2 found 16 of 167 rows where this happens.',
+     'a paper word may be a part of a longer corpus word, or may join two corpus words',
+     'used', 'throughout; counted in reports/cycle-02.md §3',
+     'recorded as a single orthographic unit across three sites on Crete, with no break between U and NA',
+     'A-KA-NU and ZA-TI, written A-KA-NU-ZA-TI in the corpus (p.36); I-NA-TA and I-*79-DI-SI-KA at IO Za 6 (p.16)')
+
+rule('word breaks',
+     'Where the paper thinks a published transcription has the wrong word division, it says so and gives its own.',
+     'the paper may reject a printed transcription and substitute its own division',
+     'used', 'Appendix B, pp.37, 40',
+     'Mis-transcribed by Davis: the tablet reads A-DU 𐄁 ZA, with a word divider; RE is absent.',
+     'A-DU-RE-ZA (p.37); U-NA-RU-KA-JA-SI (p.40)')
+
+
+def main():
+    fields = ['rule_id', 'kind', 'rule', 'allows', 'stated_or_used', 'where',
+              'quote', 'examples']
+    with open(DST, 'w', encoding='utf-8', newline='') as fh:
+        w = csv.DictWriter(fh, fieldnames=fields)
+        w.writeheader()
+        w.writerows(R)
+    print('wrote %s  (%d rules)' % (os.path.relpath(DST, HERE), len(R)))
+
+    from collections import Counter
+    print('\nby kind:')
+    for k, n in Counter(r['kind'] for r in R).most_common():
+        print('  %-16s %2d' % (k, n))
+    print('by stated_or_used:')
+    for k, n in Counter(r['stated_or_used'] for r in R).most_common():
+        print('  %-16s %2d' % (k, n))
+
+    long = [(r['rule_id'], len(r['quote'].split())) for r in R
+            if len(r['quote'].split()) > 25]
+    print('quotes over 25 words:', long if long else 'none')
+
+
+if __name__ == '__main__':
+    main()
